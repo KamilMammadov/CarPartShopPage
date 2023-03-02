@@ -24,9 +24,8 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\" />
-    <Folder Include="Areas\Client\Controllers\" />
-    <Folder Include="Areas\Client\Views\" />
     <Folder Include="Areas\Client\ViewModels\" />
+    <Folder Include="wwwroot\" />
   </ItemGroup>
 
 </Project>

@@ -34,6 +34,11 @@ namespace CarPartShop
 
             app.UseAuthorization();
 
+            app.MapControllerRoute(
+            name: "default",
+            pattern: "{area=exists}/{controller}/{action}");
+
+
             app.MapRazorPages();
 
             app.Run();

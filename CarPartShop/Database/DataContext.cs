@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CarPartShop.Database.Models;
+using CarPartShop.Extensions;
+using Microsoft.EntityFrameworkCore;
 
 namespace CarPartShop.Database
 {
@@ -8,6 +10,15 @@ namespace CarPartShop.Database
         : base(options)
         {
 
+        }
+        public DbSet<Navbar> Navbars { get; set; }
+        public DbSet<SubNavbar> SubNavbars { get; set; }
+
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfigurationsFromAssembly<Program>();
         }
     }
 }
