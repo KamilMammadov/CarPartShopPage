@@ -13,7 +13,8 @@ namespace CarPartShop.Database
         }
         public DbSet<Navbar> Navbars { get; set; }
         public DbSet<SubNavbar> SubNavbars { get; set; }
-
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Car> Cars { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
