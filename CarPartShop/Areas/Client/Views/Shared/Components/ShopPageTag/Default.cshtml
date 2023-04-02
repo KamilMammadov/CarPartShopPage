@@ -1,0 +1,12 @@
+﻿@using CarPartShop.Areas.Client.ViewModels
+@model List<TagListItemViewModel>
+<ul class="widgets-tag">
+    @foreach (var item in Model)
+    {
+        <li>
+            <a href="#">@item.Title</a>
+        </li>
+        
+    }
+    
+</ul>

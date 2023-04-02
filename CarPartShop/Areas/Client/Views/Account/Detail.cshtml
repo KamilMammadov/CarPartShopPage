@@ -1,0 +1,47 @@
+﻿@using CarPartShop.Areas.Client.ViewModels
+@model UserViewModel
+
+<div >
+    <div class="myaccount-details">
+        <form method="POST" asp-route="client-account-detail" class="myaccount-form">
+            <div class="myaccount-form-inner">
+                <div class="single-input single-input-half">
+                    <label>First Name*</label>
+                    <input asp-for="FirstName" type="text" />
+                </div>
+                <div class="single-input single-input-half">
+                    <label>Last Name*</label>
+                    <input asp-for="LastName" type="text" />
+                </div>
+                <div class="single-input">
+                    <label >Email*</label>
+                    <input asp-for ="Email" type="email" />
+                </div>
+                <div class="single-input">
+                    <label>
+                        Current Password(leave blank to leave
+                        unchanged)
+                    </label>
+                    <input asp-for="CurrentPasword" type="password" />
+                </div>
+                <div class="single-input">
+                    <label>
+                        New Password (leave blank to leave
+                        unchanged)
+                    </label>
+                    <input asp-for="Password" type="password" />
+                </div>
+                <div class="single-input">
+                    <label>Confirm New Password</label>
+                    <input asp-for="ConfirmPassword" type="password" />
+                </div>
+                <div class="single-input">
+                    <button class="btn btn-custom-size lg-size btn-pronia-primary"
+                            type="submit">
+                     SAVE CHANGES
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
