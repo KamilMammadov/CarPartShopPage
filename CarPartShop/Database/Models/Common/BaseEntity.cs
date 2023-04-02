@@ -1,8 +1,7 @@
-﻿namespace CarPartShop.Database.Models.Common
+﻿namespace CarPartShop.Database.Common
 {
-    public class BaseEntity
+    public abstract class BaseEntity
     {
         public int Id { get; set; }
-
     }
 }

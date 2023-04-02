@@ -6,9 +6,10 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarPartShop.Areas.Admin.Controllers
 {
+    [Area("admin")]
+    [Route("admin/navbar")]
     public class NavbarController : Controller
     {
-
         private readonly DataContext _dataContext;
 
 
@@ -21,7 +22,7 @@ namespace CarPartShop.Areas.Admin.Controllers
         [HttpGet("list", Name = "admin-navbar-list")]
         public async Task<IActionResult> ListAsync()
         {
-            var model = await _dataContext.Navbars.Select(n => new ListItemViewModel(n.Id, n.Name, n.Order, n.URL)).ToListAsync();
+            var model = await _dataContext.Navbars.Select(n => new ListItemViewModel(n.Id,n.Name, n.Order, n.URL)).ToListAsync();
 
             return View(model);
         }
@@ -111,9 +112,9 @@ namespace CarPartShop.Areas.Admin.Controllers
 
             return RedirectToRoute("admin-navbar-list");
         }
-
-
-
+       
+        
+        
         [HttpPost("delete/{id}", Name = "admin-navbar-delete")]
         public async Task<IActionResult> Delete([FromRoute] int id)
         {
@@ -130,5 +131,6 @@ namespace CarPartShop.Areas.Admin.Controllers
 
             return RedirectToRoute("admin-navbar-list");
         }
+
     }
 }

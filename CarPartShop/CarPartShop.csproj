@@ -30,9 +30,40 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Views\" />
-    <Folder Include="Areas\Admin\ViewModels\" />
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\BlogCategory\Add.cshtml" />
+    <None Include="Areas\Admin\Views\BlogCategory\List.cshtml" />
+    <None Include="Areas\Admin\Views\BlogCategory\Update.cshtml" />
+    <None Include="Areas\Admin\Views\BlogTag\Add.cshtml" />
+    <None Include="Areas\Admin\Views\BlogTag\List.cshtml" />
+    <None Include="Areas\Admin\Views\BlogTag\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Blog\List.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Add.cshtml" />
+    <None Include="Areas\Admin\Views\Category\List.cshtml" />
+    <None Include="Areas\Admin\Views\Category\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Navbar\Add.cshtml" />
+    <None Include="Areas\Admin\Views\Navbar\List.cshtml" />
+    <None Include="Areas\Admin\Views\Navbar\Update.cshtml" />
+    <None Include="Areas\Admin\Views\PaymentBenefits\Add.cshtml" />
+    <None Include="Areas\Admin\Views\PaymentBenefits\List.cshtml" />
+    <None Include="Areas\Admin\Views\PaymentBenefits\Update.cshtml" />
+    <None Include="Areas\Admin\Views\ProductImage\Add.cshtml" />
+    <None Include="Areas\Admin\Views\ProductImage\List.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Add.cshtml" />
+    <None Include="Areas\Admin\Views\Product\List.cshtml" />
+    <None Include="Areas\Admin\Views\Product\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Add.cshtml" />
+    <None Include="Areas\Admin\Views\Size\List.cshtml" />
+    <None Include="Areas\Admin\Views\Size\Update.cshtml" />
+    <None Include="Areas\Admin\Views\Tag\Add.cshtml" />
+    <None Include="Areas\Admin\Views\Tag\List.cshtml" />
+    <None Include="Areas\Admin\Views\Tag\Update.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewImports.cshtml" />
+    <None Include="Areas\Admin\Views\_ViewStart.cshtml" />
   </ItemGroup>
 
 </Project>
