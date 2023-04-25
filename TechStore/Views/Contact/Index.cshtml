@@ -1,0 +1,35 @@
+﻿@model ContactVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- main -->
+<main id="contactMain">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex justify-content-center mapIframe">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7866.698261635076!2d76.36893404541627!3d9.651179823938902!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x93fa22a41aac4d75!2sKanivu+Charitable+Trust!5e0!3m2!1sen!2sin!4v1433709664971" width="1500" height="450" frameborder="0" style="border:0"></iframe>
+
+            </div>
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xxl-12 col-xl-12 mb-12">
+                <div class="row align-items-center justify-content-between text-center iconPart">
+                    @foreach (var item in Model.Contacts)
+                    {
+                    <div class="box col-lg-2-5 col-xl-2-5 col-xxl-2-5 col-12 col-md-12 col-sm-12">
+                        <div class="icon">
+                            <img src="assets/images/@item.Image" alt="">
+                        </div>
+                        <div class="heading">
+                            @item.Title
+                        </div>
+                        <div class="ph">@item.Description</div>
+
+                    </div>
+
+                    }
+                </div>
+            </div>
+          
+        </div>
+    </div>
+</main>

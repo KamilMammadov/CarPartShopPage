@@ -1,0 +1,39 @@
+﻿@model List<WishlistVM>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- main -->
+<main id="cartMain">
+    <div class="breadcrumbGeneral">
+        <div class="container">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="generalCart">
+            <div class="row">
+                <div class="col-lg-12 col-xl-12 col-xxl-12 col-12 col-md-12 col-sm-12">
+                    <div class="leftCart">
+                        <h3>Shooping Cart</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                </tr>
+                            </thead>
+                            <tbody class="basketindexcontainer">
+                                @await Html.PartialAsync("_WishlistPartial", Model)
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Component.InvokeAsync("Services")
+</main>

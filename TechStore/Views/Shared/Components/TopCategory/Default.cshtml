@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Category>
+<section id="OurProducts">
+    <div class="container">
+        <div class="productTab">
+            <ul class="d-flex">
+                <li><a href="">Top Categories</a></li>
+            </ul>
+        </div>
+        <div class="row productBoxes">
+            @foreach (var item in Model.Take(6))
+            {
+            <div class="col-lg-3-5 col-xl-3-5 col-xxl-3-5">
+                <div class="box">
+                    <div class="ImageAndText row align-items-center justify-content-evenly flex-nowrap">
+                        <div class="imgPart col-lg-6 col-xxl-6 col-xl-6 col-6 col-md-6 col-sm-6">
+                            <img src="~/assets/images/category-icon/@item.Image" style="width:40%" alt="">
+
+                            
+                        </div>
+                        <div class="textPart col-lg-6 col-xxl-6 col-xl-6 col-6 col-md-6 col-sm-6">
+                            <div class="productDescription">
+                                <a href="">@item.Name</a>
+                            </div>
+                            <div class="productTitle">
+                               
+                                    @foreach (var product in item.Products.Take(2))
+                                    {
+                                        <h2>
+                                            @product.Name
+
+                                        </h2>
+                                    }
+                                
+
+                            </div>
+                            <div class="price">
+                                <div class="sale">
+                                    See all
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            }
+        </div>
+    </div>
+</section>

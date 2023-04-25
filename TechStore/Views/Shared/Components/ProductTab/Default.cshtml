@@ -1,0 +1,649 @@
+﻿@model IEnumerable<Product>
+
+    <section id="categories">
+        <div class="container">
+            <div class="categoryGeneral">
+                <div class="productTab">
+                    <ul class="d-flex flex-wrap">
+                        <li><button style="background-color:white; border:none;" class="tablinks" onclick="openCity(event, 'Smart')">Smartphones</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Tablet')">Tablet</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'GameBox')">Game Box</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Accessories')">Accessories</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Mobile')">Mobile</button></li>
+                        <li><button class="tablinks" onclick="openCity(event, 'Computers')">Computers</button></li>
+                    </ul>
+                </div>
+                
+                <div id="Smart" class="tabcontent productPart" style="display:block">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p=>p.Category.Name.Contains("Smart")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a style="color:white" class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a asp-controller="wishlist" asp-action="addtobasket" asp-route-id="@product.Id"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("Smart")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a style="color:white" class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Tablet" class="tabcontent productPart" style="display:none">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p => p.Category.Name.Contains("Tablet")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("Tablet")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div id="GameBox" class="tabcontent productPart" style="display:none">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p => p.Category.Name.Contains("GameBox")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("GameBox")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Accessories" class="tabcontent productPart" style="display:none">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p => p.Category.Name.Contains("Accessories")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("Accessories")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Mobile" class="tabcontent productPart" style="display:none">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p => p.Category.Name.Contains("Mobile")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("Mobile")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div id="Computers" class="tabcontent productPart" style="display:none">
+                    <div class="row">
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12 d-flex align-items-center justify-content-center">
+                            @foreach (Product product in Model.Where(p => p.Category.Name.Contains("Computers")).Take(1))
+                            {
+
+                                <div class="imageAndTextBoxLeft">
+                                    <div class="box">
+                                        <img src="~/assets/images/product/@product.MainImage" alt="">
+                                    </div>
+                                    <div class="textPart">
+                                        <div class="title d-flex justify-content-center">
+                                            <span>-</span>
+                                            <div class="text">
+                                                @product.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="productDescription">
+                                            <a asp-controller="product" asp-action="detail" asp-route-id="@product.Id">@product.Name <br> G2356</a>
+                                        </div>
+                                        <div class="priceSection d-flex">
+                                            <div class="discount">
+                                                $@product.Price
+                                            </div>
+                                            <div class="sale">
+                                                <del>
+                                                    $@product.DiscountedPrice
+                                                </del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="onHoverBasketCompareWishListRight">
+                                        <div class="top">
+                                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product.Id">Add to Cart</a>
+
+                                        </div>
+                                        <div class="bottom">
+                                            <div class="left">
+                                                <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                            </div>
+                                            <div class="right">
+                                                <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            }
+                        </div>
+                        <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-sm-12 col-12">
+                            <div class="productBox">
+                                <div class="row justify-content-between">
+                                    @foreach (Product product1 in Model.Where(p => p.Category.Name.Contains("Computers")).Take(4))
+                                    {
+                                        <div id="product1" class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                            <div class="imageAndTextBox">
+                                                <div class="box">
+                                                    <img src="~/assets/images/product/@product1.MainImage" alt="">
+                                                </div>
+                                                <div class="textPart">
+                                                    <div class="title d-flex justify-content-center">
+                                                        <span>-</span>
+                                                        <div class="text">
+                                                            @product1.Category.Name
+                                                        </div>
+                                                    </div>
+                                                    <div class="productDescription">
+                                                        <a asp-controller="product" asp-action="detail" asp-route-id="@product1.Id">Apple iPad Mini <br> G2356</a>
+                                                    </div>
+                                                    <div class="priceSection d-flex">
+                                                        <div class="discount">
+                                                            $@product1.Price
+                                                        </div>
+                                                        <div class="sale">
+                                                            <del>
+                                                                $@product1.DiscountedPrice
+                                                            </del>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="onHoverBasketCompareWishList">
+                                                    <div class="top">
+                                                        <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@product1.Id">Add to Cart</a>
+
+                                                    </div>
+                                                    <div class="bottom">
+                                                        <div class="left">
+                                                            <a href="compare.html"><img src="~/assets/images/compare.png" alt=""> Compare</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="wishlist.html"><img src="~/assets/images/wishlist.png" alt=""> Wishlist</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>

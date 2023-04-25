@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+    <div class="modal fade modalBootstrap" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6">
+                        <div class="closeForModalOnBody">
+                            X
+                        </div>
+                        <h2>
+                            Join our newsletter and
+                            get discount!
+                        </h2>
+                        <p>
+                            Subscribe to the newsletter to receive updates about new products.
+                        </p>
+                        <div class="inputForModal">
+                            <input type="email" placeholder="Your E-Mail">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <input type="checkbox"> <span>Dont show this popup again</span>
+                    </div>
+                    <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6">
+                        <img src="~/assets/images/popup.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ 
+    <main>
+        <!-- Slider Section Home -->
+        @(await Component.InvokeAsync("Slider"))
+        <!-- Banner on Home -->
+        @await Component.InvokeAsync("Banner")
+        <!-- Product Boxes --new arrival-- ---featured-- ---top selling----->
+        @await Component.InvokeAsync("Product")
+        <!-- our products-->
+        @await Component.InvokeAsync("OurProduct")
+        <!-- Categories -->
+                        @await Component.InvokeAsync("ProductTab")
+        <!-- special offers -->
+
+        @await Component.InvokeAsync("SpecialOffer")
+
+        <!-- most viewed -->
+       @await Component.InvokeAsync("MostViewed")
+        <!-- highlights -->
+          @await Component.InvokeAsync("Highlight")
+        <!-- services section -->
+       @await Component.InvokeAsync("PaymentMethod") 
+    </main>
+

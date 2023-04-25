@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Slider>
+<section id="mainSliderSection">
+
+    <div class="mainSliderSection">
+        @foreach (Slider item in Model)
+        {
+        <div class="generalForSlider">
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-xxl-6 col-9 col-sm-6 col-md-6 leftForMainSlider">
+                    <p>@Html.Raw(item.Title)</p>
+                    <h2>@Html.Raw(item.Name)</h2>
+                    <p>@item.Description</p>
+
+                    <div class="buttonSection d-flex align-items-center">
+                        <div class="price">
+                            $@item.SalePrice
+                        </div>
+                        <div class="shopNow">
+                            <a @item.Link>Show Now</a> <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <div class="priceDiscount">
+                        <del>$@item.RegularPrice</del>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-6 col-xxl-6 col-3 col-sm-6 col-md-6 d-flex justify-content-end align-content-end mt-5">
+                    <div class="image">
+                        <img style="width:100%" id="backImage" src="~/assets/images/homeSlider/@item.Image" alt="">
+                        <img src="~/assets/images/homeSlider/MainSliderBack.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        }
+   
+    </div>
+
+</section>

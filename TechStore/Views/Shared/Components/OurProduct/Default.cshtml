@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Product>
+
+<section id="OurProducts">
+    <div class="container">
+        <div class="productTab">
+            <ul class="d-flex">
+                <li><a href="">Our Products</a></li>
+            </ul>
+        </div>
+        <div class="row productBoxes">
+            @foreach (Product item in Model)
+            {
+            <div class="col-lg-3-5 col-xl-3-5 col-xxl-3-5">
+                <div class="box">
+                    <div class="ImageAndText d-flex align-items-center justify-content-evenly flex-nowrap">
+                        <div class="imgPart">
+                            <img src="~/assets/images/product/@item.MainImage" alt="">
+                        </div>
+                        <div class="textPart">
+                            <div class="productTitle">
+                                <h2>@item.Category.Name</h2>
+                            </div>
+                            <div class="productDescription">
+                                <a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id">@item.Name</a>
+                            </div>
+                            <div class="price">
+                                <div class="discount">
+                                    $@item.Price
+                                </div>
+                                <div class="sale">
+                                    $@item.DiscountedPrice
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="compareWishlistCart">
+                        <div class="compare d-flex align-items-center"><a href="compare.html"><img src="~/assets/images/compare.png" alt="">Compare</a></div>
+                        <div class="wishlist d-flex align-items-center"><a asp-controller="wishlist" asp-action="addtobasket" asp-route-id="@item.Id"><img src="~/assets/images/wishlist.png" alt="">Wishlist</a></div>
+                        <div class="addToCart">
+                            <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@item.Id">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            }
+          
+
+        </div>
+    </div>
+</section>

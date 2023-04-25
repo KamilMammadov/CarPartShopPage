@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Category>
+
+@foreach (Category category in Model)
+{
+    if (category.Products != null)
+    {
+
+        <li><i class="fa-solid fa-chevron-right"></i>@category.Name <span>(@category.Products.Count())</span></li>
+    }
+
+}

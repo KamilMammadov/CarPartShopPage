@@ -1,0 +1,18 @@
+﻿@model IEnumerable<CategorySlider>
+
+@foreach (var item in Model)
+{
+<div class="generalForSlider">
+    <div class="row align-items-center">
+        <div class="col-lg-6 col-xl-6 col-xxl-6 col-9 col-sm-6 col-md-6 leftForMainSlider">
+            <p>@item.Title</p>
+            <h2>@item.Name</h2>
+        </div>
+        <div class="col-lg-6 col-xl-6 col-xxl-6 col-3 col-sm-6 col-md-6 d-flex justify-content-end align-content-end">
+            <img id="backImage" src="~/assets/images/@item.Image" alt="">
+        </div>
+    </div>
+
+</div>
+
+}

@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Product>
+<section id="mostViewed">
+    <div class="container">
+        <div class="productTab">
+            <ul class="d-flex">
+                <li><a href="">Most Viewed</a></li>
+            </ul>
+        </div>
+        <div class="productBox row justify-content-between">
+            @foreach (var item in Model)
+            {
+            <div class="imageAndTextBox col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 ">
+                <img src="~/assets/images/product/@item.MainImage" alt="">
+                <div class="textPart">
+                    <div class="title d-flex justify-content-start">
+                        <div class="text">
+                            @item.Category.Name
+                        </div>
+                    </div>
+                    <div class="productDescription">
+                        <a asp-controller="product" asp-action="detail" asp-route-id="@item.Id">@item.Name <br> G2356</a>
+                    </div>
+                    <div class="priceSection d-flex">
+                        <div class="discount">
+                            $@item.DiscountedPrice
+                        </div>
+                        <div class="sale">
+                            <del>
+                                $@item.Price
+                            </del>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            }
+        </div>
+    </div>
+</section>

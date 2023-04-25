@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Blog>
+
+@foreach (var item in Model)
+{
+<div class="blog">
+    <img src="assets/images/blog/@item.Image" alt="">
+    <h3><a href="">@item.Title</a></h3>
+    <ul class="d-flex">
+        <li class="date">
+            <a href="">@item.UpdatedAt</a>
+        </li>
+    </ul>
+    <p>@item.Description</p>
+    <button> Read More <i class="fa-solid fa-arrow-right-long"></i></button>
+</div>
+
+}

@@ -1,0 +1,79 @@
+﻿@model Setting
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="row">
+    <div class="col-lg-12 h3 mb-4 text-gray-800">
+        <h1>Setting Update</h1>
+    </div>
+    <div class="col-lg-12 mx-auto">
+        <form method="post" enctype="multipart/form-data">
+            @if (Model.Key == "paypal")
+            {
+                <div class="form-group">
+                    <label>Paypal</label>
+                    <input asp-for="Paypal" accept="image/png" class="form-control" placeholder="Enter paypal">
+                    <span class="text-danger" asp-validation-for="Paypal"></span>
+                </div>
+            }
+            else if (Model.Key == "discover")
+            {
+                <div class="form-group">
+                    <label>discover</label>
+                    <input asp-for="Discover" accept="image/png" class="form-control" placeholder="Enter discover">
+                    <span class="text-danger" asp-validation-for="Discover"></span>
+                </div>
+            }
+            else if (Model.Key == "visa")
+            {
+                <div class="form-group">
+                    <label>visa</label>
+                    <input asp-for="Visa" accept="image/png" class="form-control" placeholder="Enter visa">
+                    <span class="text-danger" asp-validation-for="Visa"></span>
+                </div>
+            }
+            else if (Model.Key == "mastercard")
+            {
+                <div class="form-group">
+                    <label>discover</label>
+                    <input asp-for="MasterCard" accept="image/png" class="form-control" placeholder="Enter mastercard">
+                    <span class="text-danger" asp-validation-for="MasterCard"></span>
+                </div>
+            }
+            else if (Model.Key == "americanexpress")
+            {
+                <div class="form-group">
+                    <label>americanexpress</label>
+                    <input asp-for="AmericanExpress" accept="image/png" class="form-control" placeholder="Enter americanexpress">
+                    <span class="text-danger" asp-validation-for="AmericanExpress"></span>
+                </div>
+            }
+            else if (Model.Key == "footerLogo")
+            {
+                <div class="form-group">
+                    <label>footerLogo</label>
+                    <input asp-for="FooterImg" accept="image/png" class="form-control" placeholder="Enter footerLogo">
+                    <span class="text-danger" asp-validation-for="FooterImg"></span>
+                </div>
+            }
+            else if (Model.Key == "callLogo")
+            {
+                <div class="form-group">
+                    <label>callLogo</label>
+                    <input asp-for="LogoImg" accept="image/png" class="form-control" placeholder="Enter callLogo">
+                    <span class="text-danger" asp-validation-for="LogoImg"></span>
+                </div>
+            }
+            else
+            {
+                <div class="form-group">
+                    <label>@Model.Key</label>
+                    <input asp-for="Value" class="form-control" placeholder="Enter">
+                    <span class="text-danger" asp-validation-for="Value"></span>
+                </div>
+            }
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

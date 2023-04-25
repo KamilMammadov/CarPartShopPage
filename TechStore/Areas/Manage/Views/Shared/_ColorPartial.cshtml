@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Color>
+@{
+    int count = (ViewBag.PageIndex - 1) * 5;
+}
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Products Count</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Updated At</th>
+            <th scope="col">Setting</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Color color in Model)
+        {
+            count++;
+        <tr>
+            <th scope="row">@count</th>
+            <td>@color.Name</td>
+            <td>@color.ProductColors.Count()</td>
+            <td>
+                @color.CreatedAt?.ToString("dd/mm/yyyy")
+            </td>
+            <td>
+                @color.UpdatedAt?.ToString("dd/mm/yyyy")
+            </td>
+            <td>
+                <a class="btn btn-warning" asp-action="Update" asp-route-page="@ViewBag.PageIndex" asp-route-id="@color.Id">Update</a>
+                <a class="btn btn-danger"  asp-action="delete" asp-route-page="@ViewBag.PageIndex" asp-route-id="@color.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

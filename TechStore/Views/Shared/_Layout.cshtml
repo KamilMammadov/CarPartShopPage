@@ -1,0 +1,49 @@
+﻿@inject ILayoutService layoutservices
+
+@{
+    Dictionary<string, string> settings = await layoutservices.GetSettingsAsync();
+    IEnumerable<Category> categories = await layoutservices.GetCategoriesAsync();
+    List<BasketVM> basketVMs = await layoutservices.GetBasket();
+    IEnumerable<Product> products = await layoutservices.GetProductAsync();
+    HeaderVM headerVM = new HeaderVM
+    {
+        BasketVMs = basketVMs,
+        Categories = categories,
+        Settings = settings,
+        Products = products
+    };
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css">
+    <title>Techno Store</title>
+</head>
+<body>
+    <!-- Header Section -->
+    @(await Component.InvokeAsync("Header", headerVM))
+    @RenderBody()
+    <!-- Footer Section -->
+    @(await Component.InvokeAsync("Footer",settings) )
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script defer type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="~/assets/js/app.js" defer></script>
+    <script src="~/assets/js/about.js" defer></script>
+    <script src="~/assets/js/custom.js" defer></script>
+    <script src="~/assets/js/shop.js" defer></script>
+    <script src="~/assets/js/brand.js" defer></script>
+    <script src="~/assets/js/singleProduct.js" defer></script>
+    <script src="~/assets/js/category.js" defer></script>
+    <script src="~/assets/js/cart.js" defer></script>
+    <script src="~/assets/js/bootstrap.js" defer></script>
+
+    @RenderSection("Script", required: false)
+
+</body>
+</html>

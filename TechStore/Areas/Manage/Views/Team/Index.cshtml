@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Team>
+
+@{
+    ViewData["Title"] = "Index";
+    int count = (ViewBag.PageIndex - 1) * 5;
+}
+
+
+<div class="row">
+    <div class="col-lg-2 h3 mb-4 text-gray-800">
+        <h1>Team</h1>
+    </div>
+
+
+    <div class="col-lg-8 h3 mb-4 text-gray-800 text-end">
+        <a asp-controller="team" asp-action="Create" asp-area="Manage" class="btn btn-primary">Create</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">full Name</th>
+                    <th scope="col">position</th>
+                    <th scope="col">Image</th>
+                    <th>
+                        Created at
+                    </th>
+                    <th>
+                        Updated at
+                    </th>
+                    <th scope="col">Setting</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Team team in Model)
+                {
+                    count++;
+                    <tr>
+                        <th class="align-middle" scope="row">@count</th>
+                        <td class="align-middle">@team.FullName</td>
+                        <td class="align-middle">@team.Position</td>
+                        <td class="align-middle" style="width:10%"><img width="50%" src="~/assets/images/ourTeam/@team?.Image" alt="Alternate Text" style="width:90%" /></td>
+                        <td>
+                            @team.CreatedAt?.ToString("dd/mm/yyyy")
+                        </td>
+                        <td>
+                            @team.UpdatedAt?.ToString("dd/mm/yyyy")
+                        </td>
+                        <td class="d-flex p-5">
+                            <a class="btn btn-warning" style="margin-right:10px" asp-action="Update" asp-route-page="@ViewBag.PageIndex" asp-route-id="@team.Id">Update</a>
+                            <a class="btn  btn-danger" asp-route-page="@ViewBag.PageIndex" asp-action="delete" asp-route-id="@team.Id">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-lg-12">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                @if (ViewBag.PageIndex > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" asp-action="index" asp-route-page="1" aria-label="Previous">
+                            @("<<")
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)" aria-label="Previous">
+                            @("<")
+                        </a>
+                    </li>
+                    @if (ViewBag.PageIndex == ViewBag.PageCount && ViewBag.PageIndex > 2)
+                    {
+                        <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-2)">@(ViewBag.PageIndex-2)</a></li>
+                    }
+                    <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)">@(ViewBag.PageIndex-1)</a></li>
+                }
+
+                <li class="page-item active"><a class="page-link" asp-action="index" asp-route-page="@ViewBag.PageIndex">@ViewBag.PageIndex</a></li>
+
+                @if (ViewBag.PageIndex < ViewBag.PageCount)
+                {
+                    <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex + 1)">@(ViewBag.PageIndex + 1)</a></li>
+                    @if (ViewBag.PageIndex == 1 && (ViewBag.PageIndex + 2) < ViewBag.PageCount)
+                    {
+                        <li class="page-item"><a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex+2)">@(ViewBag.PageIndex+2)</a></li>
+                    }
+                    <li class="page-item">
+                        <a class="page-link" asp-route-page="@(ViewBag.PageIndex + 1)" aria-label="Next">
+                            @(">")
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" asp-action="index" asp-route-page="@ViewBag.PageCount" aria-label="Next">
+                            @(">>")
+                        </a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>
+
+

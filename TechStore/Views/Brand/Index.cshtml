@@ -1,0 +1,86 @@
+﻿@model IEnumerable<Brand>
+@{
+    ViewData["Title"] = "Index";
+}
+<!-- main -->
+<main id="_BrandMain">
+    <div class="container">
+        <div class="heading">
+            <h3>Brands</h3>
+        </div>
+        <div class="row general">
+            <div class="col-lg-12 col-xl-12 col-xxl-12 d-flex flex-wrap justify-content-center">
+                <div class="brands-tablist d-flex flex-wrap">
+                    <div id="b1" class="all">All</div>
+                    <div id="b2" class="A">A</div>
+                    <div id="b3" class="B">B</div>
+                    <div id="b4" class="C">C</div>
+                    <div id="b5" class="D">D</div>
+                    <div id="b6" class="E">E</div>
+                    <div id="b7" class="F">F</div>
+                    <div id="b8" class="G">G</div>
+                    <div id="b9" class="H">H</div>
+                    <div id="b10" class="I">I</div>
+                    <div id="b11" class="J">J</div>
+                    <div id="b12" class="K">K</div>
+                    <div id="b13" class="L">L</div>
+                    <div id="b14" class="M">M</div>
+                    <div id="b15" class="N">N</div>
+                    <div id="b16" class="O">O</div>
+                    <div id="b17" class="P">P</div>
+                    <div id="b18" class="Q">Q</div>
+                    <div id="b19" class="R">R</div>
+                    <div id="b20" class="S">S</div>
+                    <div id="b21" class="T">T</div>
+                    <div id="b22" class="U">U</div>
+                    <div id="b23" class="V">V</div>
+                    <div id="b24" class="W">W</div>
+                    <div id="b25" class="X">X</div>
+                    <div id="b26" class="Y">Y</div>
+                    <div id="b27" class="Z">Z</div>
+                </div>
+                <div class="brands">
+                    @foreach (var item in Model.Where(m=>m.Name.Contains("A")))
+                    {
+                    <div id="apple1" class="apple">
+                        <div class="name">
+                           @item.Name
+
+                        </div>
+                        <div class="productcountOnThisBrand">
+                           @item.Products.Count() Product
+                        </div>
+                    </div>
+
+                    }
+                  @foreach (var item in Model)
+                  {
+                    <div id="apple2" class="apple">
+                        <div class="name">
+                            @item.Name
+
+                        </div>
+                        <div class="productcountOnThisBrand">
+                           @item.Products.Count() Product
+                        </div>
+                    </div>
+
+                  }
+                    @foreach (var item in Model)
+                    {
+                    <div class="apple">
+                        <div class="name">
+                            @item.Name
+
+                        </div>
+                        <div class="productcountOnThisBrand">
+                            @item.Products.Count() Product
+                        </div>
+                    </div>
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

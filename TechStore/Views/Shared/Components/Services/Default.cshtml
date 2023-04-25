@@ -1,0 +1,21 @@
+﻿@model IEnumerable<PaymentMethod>
+
+<section id="servicesCart">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+@foreach (var item in Model)
+{
+
+            <div class="col-lg-2-5 col-xl-2-5 col-xxl-2-5 col-md-5 col-sm-5 col-12 boox">
+                <div class="img">
+                    <img src="~/assets/images/payment/@item.MainImage" alt="">
+                </div>
+                <div class="text">
+                    <h3>@item.Name</h3>
+                    <p>@item.Description</p>
+                </div>
+            </div>
+}
+        </div>
+    </div>
+</section>

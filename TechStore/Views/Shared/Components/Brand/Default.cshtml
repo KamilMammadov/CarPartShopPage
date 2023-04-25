@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Brand>
+
+@foreach (Brand item in Model)
+{
+    if (item.Products !=null)
+    {
+<div class="box">
+    <input type="checkbox"> <span>@item.Name <span>(@item.Products.Count())</span></span>
+</div>
+
+    }
+
+}

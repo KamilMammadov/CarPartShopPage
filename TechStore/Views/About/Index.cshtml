@@ -1,0 +1,116 @@
+﻿@model AboutVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<!-- main -->
+<main id="aboutMain">
+
+    <div class="container">
+
+        <div id="firstSection">
+
+            <div class="row">
+                <div class="col-lg-6 col-xl-6 col-xxl-6 col-12 col-md-12 col-sm-12 Left">
+                    <img src="assets/images/about/@Model.About.Image" alt="">
+                </div>
+                <div class="col-lg-6 col-xl-6 col-xxl-6 col-12 col-md-12 col-sm-12 Right">
+                    <div class="title">
+                        <h3>@Model.About.Title</h3>
+                    </div>
+                    <div class="content">
+                        <p>
+                            @Model.About.Description
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+        <section id="second">
+            <div class="row secondGeneral">
+                @foreach (var item in Model.Posts)
+                {
+                    <div class="col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-12 col-12 box">
+                        <img src="assets/images/about/@item.Image" alt="">
+                        <a href=""> @item.Title</a>
+                        <p>
+                            @item.Description
+                        </p>
+                    </div>
+
+                }
+            </div>
+        </section>
+        <section id="ourTeam">
+            <h3>Meet Our Team</h3>
+            <div class="mainSliderSectionAbout  row">
+
+                @foreach (var item in Model.Teams)
+                {
+                    <div class="generalForSlider col-lg-3 col-xl-3 col-xxl-3 col-6 col-sm-12 col-md-12">
+                        <div class="image">
+                            <img src="assets/images/ourTeam/@item.Image" alt="">
+                        </div>
+                        <div class="text">
+                            <div class="name">
+                                @item.FullName
+                            </div>
+                            <div class="text">
+                                @item.Position
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+            </section>
+                <section id="Testimonial">
+                    <div class="testimonialGenera">
+                        <h3>Testimonial</h3>
+                        <div class="testimonialGeneral1">
+                            @foreach (var item in Model.Testimonials)
+                            {
+                            <div class="testimonialGeneral">
+                                <div class="image">
+                                    <img src="assets/images/testimonial/@item.Image" alt="">
+
+                                </div>
+                                <div class="name">
+                                    @item.Title
+                                </div>
+                                <div class="ph">
+                                    <p>
+                                       @item.Description
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            }
+                        </div>
+                        <section id="ourTeam">
+                            <h3>Partners</h3>
+                            <div class="partners row">
+                                @foreach (var item in Model.Partners)
+                                {
+                                <div class="generalForSlider col-lg-2 col-xl-2 col-xxl-2 col-6 col-sm-12 col-md-12">
+                                    <div class="image">
+                                        <img src="assets/images/brand/@item.Image" alt="">
+                                    </div>
+                                </div>
+
+                                }
+                             </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+</main>
+

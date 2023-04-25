@@ -1,0 +1,586 @@
+@media (max-width:576px){
+   main{
+    .mainSliderSection{
+        .generalForSlider{
+            .image{
+                img{
+                    display: none !important;
+                }
+                #backImage{
+                    right: 1rem !important;
+                    top: -7rem !important;
+                }
+            }
+            .priceDiscount{
+                margin-top: -.7rem !important;
+                margin-bottom: 2rem !important;
+            }
+
+        }
+
+    }
+    .RIGHT{
+        button{
+            padding: .4rem 1rem !important;
+        }
+    }
+}
+   footer{
+    .FooterTopMobile{
+        margin-bottom: 2rem !important;
+    }
+   }
+  
+}
+
+@media (max-width:768px) {
+    header{
+            .top{
+            .accountAndLanguages{
+                justify-content: center !important;
+                .myAccountList{
+                    top: 30px !important;
+                }
+            }
+            .UsdList{
+                top: 30px !important;
+            }
+            .EnglishList{
+                top: 30px !important;
+            }
+            #triangle{
+                top: 18px !important;
+            }
+            .support{
+                justify-content: center;
+            }
+           }
+           .middle{
+            overflow: hidden;
+            .logo{
+                img{
+                   width: 40% !important; 
+                }
+    
+            }
+    
+            .logo{
+                text-align: center;
+            }
+            .lastForPrice{
+                display: none;
+            }
+            .rightForMiddle{
+                justify-content: center;
+            }
+            .basketIcon{
+                #triangle{
+                    left: 400px !important;
+                }
+                .basket{
+                    width: 65% !important;
+                    left: 110px !important;
+                }
+            }
+           }
+           .bottom{
+            display: none;
+           }
+           .bottomForMobileGeneral{
+            overflow: hidden;
+            display: block !important;
+           }
+    }
+    main{
+        
+        #mainSliderSection{
+           padding: 1.9rem 0rem !important;
+            .mainSliderSection{
+                .leftForMainSlider{
+                    p{
+                       margin-left: 40px;
+                    }
+                    h2{
+                       font-size: 44px !important;
+                       margin-left: 40px;
+                    }
+                    span{
+                       font-size: 44px !important;
+    
+                    }
+
+                }
+                .buttonSection{
+                    display: inline-block !important;
+                    margin-left: 40px !important;
+                    .shopNow{
+                        margin-top: 10px;
+                    }
+                }
+                .priceDiscount{
+                    margin-left: 70px;
+                }
+                margin: 0rem 1rem !important;
+             padding: 0rem !important;
+             .leftForMainSlider{
+                padding: 0rem !important;
+             }
+
+            }
+            .mainSliderSection{
+                .generalForSlider{
+                    .image{
+                        img{
+                            display: none;
+                        }
+                        #backImage{
+                            display: block !important;
+                            right: 1rem !important;
+                            top: -7rem !important;
+                        }
+                    }
+                    .priceDiscount{
+                        margin-top: -.7rem !important;
+                        margin-bottom: 2rem !important;
+                    }
+        
+                }
+        
+            }
+        }
+        #banner{
+            display: none !important;
+        }
+      .textPart{
+        .text{
+            left: 42% !important;
+        }
+      }
+      #categories{
+        .categoryGeneral{
+            .productPart{
+                .imageAndTextBox{
+                    .onHoverBasketCompareWishList{
+                        button{
+                            padding: .1rem .5rem !important;
+                            font-size: 10px !important;
+                        }
+                    }
+                    .box{
+                        width: 100%;
+                        padding: 1rem;
+                        img{
+                            padding: .4rem !important;
+                        }
+                    }
+                    .textPart{
+                        span{
+                            padding: 0rem 3rem !important;
+                        }
+                        .text{
+                            left: 22% !important;
+                        }
+                    }
+                    .priceSection{
+                        .sale{
+                            display: none;
+                        }
+                    }
+                    .bottom{
+                        font-size: 10px !important;
+                        text-align: center;
+                        flex-wrap: wrap;
+                    }
+                }
+               .imageAndTextBoxLeft{
+                padding: 4rem 0rem !important;
+               }
+            }
+        }
+      }
+      #highlights{
+        .heading{
+            margin-top: 20px;
+        }
+      }
+       .boox{
+        margin-top: 20px;
+       }
+    }
+    footer{
+        .FooterTopMobile{
+            margin-bottom: 2rem !important;
+        }
+       }
+       #cartMain{
+        .totalPrice{
+            width: 50% !important;
+            font-size: 10px !important;
+        }
+        .trash{
+            margin: 0;
+        }
+       }
+       #aboutMain{
+        #second{
+            a{
+                margin-top: 20px !important;
+            }
+            p{
+                margin-bottom: 30px !important;
+            }
+            img{
+             width: 100% !important;
+            }
+         }
+       }
+}
+@media (max-width:991px)  { 
+    header{
+        .searchSuggestions{
+            display: none;
+        }
+        #overlay{
+            display: none !important;
+        }
+        .top{
+        .accountAndLanguages{
+            justify-content: center !important;
+            .myAccountList{
+                top: 30px !important;
+            }
+        }
+        .UsdList{
+            top: 30px !important;
+        }
+        .EnglishList{
+            top: 30px !important;
+        }
+        #triangle{
+            top: 18px !important;
+        }
+        .support{
+            justify-content: center;
+        }
+       }
+       .middle{
+        .logo{
+            img{
+               width: 100%; 
+            }
+
+        }
+        
+        overflow: hidden;
+        #categoryInputOnSearch{
+            display: none;
+        }
+        input{
+            padding-left: 1rem !important;
+
+        }
+
+        .logo{
+            text-align: center;
+        }
+        .lastForPrice{
+            display: none;
+        }
+        .rightForMiddle{
+            justify-content: center;
+        }
+        .basketIcon{
+            #triangle{
+                left: 400px !important;
+            }
+            .basket{
+                width: 65% !important;
+                left: 110px !important;
+            }
+        }
+       }
+       .bottom{
+        display: none;
+       }
+       .bottomForMobileGeneral{
+        overflow: hidden;
+        display: block !important;
+       }
+}
+.addtoCatButtoon{
+    button{
+        padding: .3rem 0 !important;
+    }
+}
+main{
+    #mainSliderSection{
+       padding: 1.9rem 0rem !important;
+        .mainSliderSection{
+            .leftForMainSlider{
+                p{
+                   margin-left: 40px;
+                }
+                h2{
+                   font-size: 44px !important;
+                   margin-left: 40px;
+                }
+                span{
+                   font-size: 44px !important;
+
+                }
+
+            }
+            .buttonSection{
+                display: inline-block !important;
+                margin-left: 40px !important;
+                .shopNow{
+                    margin-top: 10px;
+                }
+            }
+            .priceDiscount{
+                margin-left: 70px;
+            }
+            margin: 0rem 1rem !important;
+         padding: 0rem !important;
+         .leftForMainSlider{
+            padding: 0rem !important;
+         }
+
+        }
+    }
+    .textPart{
+        .text{
+            left: 42% !important;
+        }
+      }
+      #categories{
+        .categoryGeneral{
+            .productPart{
+                .imageAndTextBox{
+                    .onHoverBasketCompareWishList{
+                        button{
+                            padding: .1rem .5rem !important;
+                            font-size: 10px !important;
+                        }
+                    }
+                    .box{
+                        width: 100%;
+                        padding: 1rem;
+                        img{
+                            padding: .4rem !important;
+                        }
+                    }
+                    .textPart{
+                        span{
+                            padding: 0rem 3rem !important;
+                        }
+                        .text{
+                            left: 27% !important;
+                        }
+                    }
+                    .priceSection{
+                        .sale{
+                            display: none;
+                        }
+                    }
+                    .bottom{
+                        font-size: 10px !important;
+                        text-align: center;
+                        flex-wrap: wrap;
+                    }
+                }
+               .imageAndTextBoxLeft{
+                padding: 4rem 0rem !important;
+               }
+            }
+        }
+      }
+      #specialOffer{
+        overflow: hidden;
+        .LEFT{
+            .ph{
+                text-align: center;
+            }
+            .countDown{
+                justify-content: center !important;
+            }
+            padding-right: 10px !important;
+        }
+        .RIGHT{
+            padding-left: 10px !important;
+        }
+      }
+}
+#singleProduct{
+    .rightCart{
+        margin-top: 30px;
+    }
+}
+footer{
+    .FooterTopMobile{
+        margin-bottom: 2rem !important;
+    }
+   }
+   #shopMain{
+    overflow: hidden;
+ .basket{
+    img{
+        width: 50% !important;
+    }
+ }
+ .banner{
+    margin-top: 150px !important;
+ }
+   }
+ }
+@media (max-width:1025px) { 
+    header{
+        overflow: hidden;
+        .bottom{
+            .megaMenu{
+               left: 20px !important;
+            }
+        }
+    }
+    main{
+        #mainSliderSection{
+           padding: 1.9rem 0rem !important;
+            .mainSliderSection{
+                .leftForMainSlider{
+                    p{
+                       margin-left: 40px;
+                    }
+                    h2{
+                       font-size: 44px !important;
+                       margin-left: 40px;
+                    }
+                    span{
+                       font-size: 44px !important;
+    
+                    }
+
+                }
+                .buttonSection{
+                    margin-left: 40px !important;
+                    
+                }
+                .priceDiscount{
+                    margin-left: 70px;
+                }
+                margin: 0rem 1rem !important;
+             padding: 0rem !important;
+             .leftForMainSlider{
+                padding: 0rem !important;
+             }
+
+            }
+        }
+         #productBoxesNewArrivalFeaturedTopSelling{
+        .productBox{
+            .box{
+                img{
+                    width: 70%;
+                }
+                
+            }
+        }
+       }
+    }
+    footer{
+        .top{
+            .container{
+                margin: 0 20px !important;
+            }
+        }
+    }
+    #servicesCart{
+        h3{
+         margin: 5px 0 !important;
+         font-size: 15px !important;
+        }
+        }
+        #aboutMain{
+            #firstSection{
+                img{
+                    position: static !important;
+                }
+            }
+        }
+     
+ }
+@media (max-width:1281px) { 
+    header{
+        overflow: hidden !important;
+        .bottom{
+            .megaMenu{
+               left: 20px !important;
+            }
+        }
+    }
+    main{
+        #mainSliderSection{
+           padding: 1.9rem 0rem !important;
+            .mainSliderSection{
+                .leftForMainSlider{
+                    p{
+                       margin-left: 40px;
+                    }
+                    h2{
+                       margin-left: 40px;
+                    }
+    
+                }
+                .buttonSection{
+                    display: inline-block !important;
+                    margin-left: 40px !important;
+                    .shopNow{
+                        margin-top: 10px;
+                    }
+                }
+                .priceDiscount{
+                    margin-left: 70px;
+                }
+                margin: 0rem 1rem !important;
+             padding: 0rem !important;
+             .leftForMainSlider{
+                padding: 0rem !important;
+             }
+    
+            }
+        }
+        #productBoxesNewArrivalFeaturedTopSelling{
+            .productBox{
+                .box{
+                    img{
+                        width: 70%;
+                    }
+                    
+                }
+            }
+           }
+    }
+    #servicesCart{
+        h3{
+         margin-bottom: 10px !important;
+         font-size: 15px !important;
+        }
+        }
+        #aboutMain{
+            #firstSection{
+                img{
+                    position: static !important;
+                    width: 100% !important;
+                }
+                .Right{
+                    margin-top: 30px !important;
+                }
+            }
+            #second{
+               img{
+                width: 80%;
+               }
+            }
+        }
+       
+    
+}

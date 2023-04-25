@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+@{
+    int count = (ViewBag.PageIndex - 1) * 5;
+}
+<!--bread crumb -->
+<div class="breadcrumbGeneral">
+    <div class="container">
+     
+    </div>
+</div>
+<!-- main -->
+<main id="blogMain">
+
+    <section id="post">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-xxl-9 col-xl-9 col-md-8 col-sm-12 col-12">
+                    @await Component.InvokeAsync("Blog")
+                    <nav aria-label="Page navigation example" style="margin-bottom:3rem">
+                        <ul class="pagination">
+                            @if (ViewBag.PageIndex > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="1" aria-label="Previous" style="color:grey">
+                                        @("<<")
+
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)" aria-label="Previous" style="color:grey">
+                                        <i class="fa-solid fa-arrow-left-long" style="color:grey"></i> Prev Page
+
+                                    </a>
+                                </li>
+                                @if (ViewBag.PageIndex == ViewBag.PageCount && ViewBag.PageIndex > 2)
+                                {
+                                    <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-2)">@(ViewBag.PageIndex-2)</a></li>
+                                }
+                                <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)">@(ViewBag.PageIndex-1)</a></li>
+                            }
+
+                            <li style="color:grey" class="page-item active"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@ViewBag.PageIndex">@ViewBag.PageIndex</a></li>
+
+                            @if (ViewBag.PageIndex < ViewBag.PageCount)
+                            {
+                                <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex + 1)">@(ViewBag.PageIndex + 1)</a></li>
+                                @if (ViewBag.PageIndex == 1 && (ViewBag.PageIndex + 2) < ViewBag.PageCount)
+                                {
+                                    <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex+2)">@(ViewBag.PageIndex+2)</a></li>
+                                }
+                                <li style="color:grey" class="page-item">
+                                    <a style="color:grey" class="page-link" asp-route-page="@(ViewBag.PageIndex + 1)" aria-label="Next">
+                                        Next Page <i class="fa-solid fa-arrow-right-long"></i>
+
+                                    </a>
+                                </li>
+                                <li style="color:grey" class="page-item">
+                                    <a style="color:grey" class="page-link" asp-action="index" asp-route-page="@ViewBag.PageCount" aria-label="Next">
+                                        @(">>")
+
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-4 col-sm-12 col-12 right">
+                  
+                    <section id="highlights">
+                        <div class="container">
+                            <div class="heading">
+                                <h3>Latest Products</h3>
+                            </div>
+                         @await Component.InvokeAsync("LatestProduct") 
+                        </div>
+                    </section>
+                    <div class="categoryTab">
+                        <div class="category"><a href="">Popular Tags</a></div>
+                    </div>
+                    <div class="tags">
+                        <ul class="d-flex">
+                          @await Component.InvokeAsync("Tag")
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+

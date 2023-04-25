@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Color>
+
+@foreach (Color item in Model)
+{
+    if (item.ProductColors!=null)
+    {
+
+<div class="box">
+    <input type="checkbox"> <span>@item.Name <span>(@item.ProductColors.Count())</span></span>
+</div>
+    }
+
+}

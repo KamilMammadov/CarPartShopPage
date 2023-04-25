@@ -1,0 +1,272 @@
+﻿@model SingleVM
+@{
+    ViewData["Title"] = "Detail";
+}
+
+
+<main id="singleProductMain">
+    <section id="singleProduct">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 col-xxl-5 col-xl-5 col-md-12 col-12 col-sm-12">
+                    <div class="product">
+                        <div class="product-main row justify-content-center">
+                            <div class="product-slide">
+                                <div class="slider-for">
+                                    <div class="product-1">
+                                        <img style="width:100%" src="~/assets/images/big-size.jpg" alt="">
+                                    </div>
+                                    <div class="product-1">
+                                        <img style="width:100%" src="~/assets/images/big-size.jpg" alt="">
+                                    </div>
+                                    <div class="product-1">
+                                        <img style="width:100%" src="~/assets/images/big-size.jpg" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="slider-nav">
+                                  
+                                    @foreach (var item in Model.ProductImages)
+                                    {
+                                       @if (item.Image != null && item.Image.Count()>5)
+                                       {
+
+                                        <div class="product-2">
+                                        <img src="~/assets/images/product/@item.Image" alt="">
+                                        </div>
+                                        }
+                                   
+                                    }
+
+                                 
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-12 col-12 col-sm-12">
+                    <div class="rightCart">
+                        <h3>@Model.ProductSingle.Name</h3>
+                        <div class="category">
+                            @Model.ProductSingle.Category.Name
+                        </div>
+                        <div class="review">
+                            <div class="row mt-4 align-items-center">
+                               
+                                <div class="col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-6 col-sm-6 d-flex justify-content-start align-items-center bottom">
+                                    <p>Availablity</p>
+                                    @if (Model.ProductSingle != null)
+                                    {
+                                        <h3>
+                                            In Stock
+
+                                        </h3>
+                                    }
+                                    else
+                                    {
+                                        <h3>
+                                           Not In Stock
+
+                                        </h3>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <div class="regular">
+                                $ @Model.ProductSingle.DiscountedPrice
+                            </div>
+                            <div class="sale">
+                                $ @Model.ProductSingle.Price
+                            </div>
+                        </div>
+                        <div class="info-txt">
+                           @Model.ProductSingle.infoText
+                        </div>
+                        <div class="product-id">
+                            <span>@Model.ProductSingle.Seria : <span>@Model.ProductSingle.Code</span></span>
+                        </div>
+                        <div class="selectAndQuantity">
+                            <select name="" id="">
+
+                                <option value="">Select Color</option>
+                                <option value="">Select Color</option>
+                                <option value="">Select Color</option>
+                            </select>
+                            <div class="quantity">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-2 col-xxl-2 col-xl-2 col-2 col-sm-2 col-md-2">
+                                        <i class="fa-solid fa-minus"></i>
+                                    </div>
+                                    <div class="col-lg-8 col-xxl-8 col-xl-8 col-8 col-sm-8 col-md-8 text-center">
+                                        Quantity
+                                    </div>
+                                    <div class="col-lg-2 col-xxl-2 col-xl-2 col-2 col-sm-2 col-md-2">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="addtoCatButtoon row">
+                            <button class="col-lg-6 col-xl-6 col-xxl-6 col-sm-6 col-6 col-md-6">
+                                <img src="~/assets/images/cart.png" alt=""><span>
+                                <a class="addtobasket" asp-controller="basket" asp-action="addtobasket"  asp-route-id="@Model.ProductSingle.Id" style="color:white">
+                                Add To Cart
+
+                                </a>
+                                </span>
+                            </button>
+                            <div class="compare col-lg-3 col-xl-3 col-xxl-3 col-sm-3 col-3 col-md-3 d-flex align-items-center">
+                                <img src="~/assets/images/compare.png" alt="">
+                                <span>Compare</span>
+                            </div>
+                            <div class="wishlist col-lg-3 col-xl-3 col-xxl-3 col-sm-3 col-3 col-md-3 d-flex align-items-center">
+                                <img src="~/assets/images/wishlist.png" alt="">
+                                <span>Wishlist</span>
+                            </div>
+
+                        </div>
+                        <div class="socialSingle">
+                            <span>SHARE</span>
+                            <i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-pinterest-p"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-twitter"></i><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-pinterest-p"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="descriptionTechnicalSpecsReviews row text-center justify-content-center">
+        <div class="col-lg-2 col-xl-2 col-xxl-2 col-sm-4 col-md-4 col-4 single">
+            <p class="active" id="DescriptionP">Description</p>
+        </div>
+        <div class="col-lg-2 col-xl-2 col-xxl-2 col-sm-4 col-md-4 col-4 single">
+            <p id="TechnicalP">Techincal Specs</p>
+        </div>
+    </div>
+    <section id="Description">
+        <div class="container">
+            <div class="row justify-content-between top">
+                @foreach (var item in Model.Descriptions.Take(1))
+                {
+                <div class="col-lg-6 col-xl-6 col-xxl-6 col-12 col-sm-12 col-md-12">
+                    <h4>@item.Title</h4>
+                    <p>@item.DescriptionGeneral</p>
+                    <h4>Wireless</h4>
+                    <p>Sed sodales sed orci molestie tristique. Nunc dictum, erat id molestie vestibulum, ex leo vestibulum justo, luctus tempor erat sem quis diam. Lorem ipsum dolor sit amet.</p>
+                    <h4>Fresh Design</h4>
+                    <p>Sed sodales sed orci molestie tristique. Nunc dictum, erat id molestie vestibulum, ex leo vestibulum justo, luctus tempor erat sem quis diam. Lorem ipsum dolor sit amet.</p>
+                    <h4>Fabolous Sound</h4>
+                    <p class="lastP">
+                        Sed sodales sed orci molestie tristique. Nunc dictum, erat id molestie vestibulum,
+                        ex leo vestibulum justo, luctus tempor erat sem quis diam. Lorem ipsum dolor sit amet.
+                        <br>Sed sodales sed orci molestie tristique. Nunc dictum, erat id molestie vestibulum, ex leo ves
+                    </p>
+
+                </div>
+
+                }
+                <div class="col-lg-5 col-xl-5 col-xxl-5 col-12 col-sm-12 col-md-12 text-end">
+                    <img src="~/assets/images/01.png" alt="">
+                    <h4>Fresh Design</h4>
+                    <p>Sed sodales sed orci molestie tristiq ibulum justo, luctus tempor erat sem quis diam. Lorem ipsum dolor sit amet.</p>
+
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="row justify-content-between">
+                    <div class="col-lg-5 col-xl-5 col-xxl-5 col-12 col-sm-12 col-md-12">
+                        <img class="imgOnLeftLine" src="~/assets/images/line-1.png" alt="">
+                        <img class="imgOnLeft" src="~/assets/images/06.png" alt="">
+                    </div>
+                    <div class="col-lg-7 col-xl-7 col-xxl-7 col-12 col-sm-12 col-md-12">
+                        <div class="row align-items-center justify-content-between ">
+                            <div class="col-lg-4 col-xl-4 col-xxl-4 col-4 col-sm-4 col-md-4 text-center">
+                                <h4>
+                                    Different Colors
+                                </h4>
+                                <p>
+                                    Sed sodales sed orci
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-xxl-4 col-4 col-sm-4 col-md-4">
+
+                                <img class="imgOnRightLine" src="~/assets/images/line-2.png" alt="">
+
+                            </div>
+                            <div class="col-lg-4 col-xl-4 col-xxl-4 col-4 col-sm-4 col-md-4 d-flex justify-content-end">
+                                <img src="~/assets/images/04.png" alt="">
+                            </div>
+                        </div>
+                        <div class="rightText">
+                            <h4>Nuqqam Et Massa</h4>
+                            <p>Sed sodales sed orci molestie tristique. Nunc dictum, erat id molestie vestibulum, ex leo vestibulum justo, luctus tempor erat sem quis diam. Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="TechnicalSpecs">
+        <div class="container">
+            <h4>
+               @Model.ProductSingle.Name
+            </h4>
+            <p>Height <span>@Model.ProductSingle.TechnicalSpec.Height</span></p>
+            <p>Material <span>@Model.ProductSingle.TechnicalSpec.Material</span></p>
+            <p>Case <span>@Model.ProductSingle.TechnicalSpec.Case</span></p>
+            <p>Color <span>
+               
+         @string.Join(", ", Model.ProductSingle.ProductColors.Select(x => x.Color.Name))
+
+                
+
+</span></p>
+            <p>Depth <span>@Model.ProductSingle.TechnicalSpec.Depth</span></p>
+            <p>Width <span>@Model.ProductSingle.TechnicalSpec.Width</span></p>
+        </div>
+
+    </section>
+   
+    <section id="recentProduct">
+        <div class="container">
+            <div class="productTab">
+                <ul class="d-flex">
+                    <li><a href="">Recent Products</a></li>
+                </ul>
+            </div>
+            <div class="productBox row justify-content-between">
+                @foreach (var item in Model.RecentProduct)
+                {
+                <div class="imageAndTextBox col-xxl-1 col-xl-1 col-lg-1 col-md-1 col-sm-1 col-1 ">
+                    <img src="~/assets/images/product/@item.MainImage" alt="">
+                    <div class="textPart">
+                        <div class="title d-flex justify-content-start">
+                            <div class="text">
+                               @item.Category.Name
+                            </div>
+                        </div>
+                        <div class="productDescription">
+                            <a asp-controller="shop" asp-action="detail">@item.Name</a>
+                        </div>
+                        <div class="priceSection d-flex">
+                            <div class="discount">
+                                $@item.DiscountedPrice
+                            </div>
+                            <div class="sale">
+                                <del>
+                                    $@item.Price
+                                </del>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                }
+            </div>
+        </div>
+
+    </section>
+</main>

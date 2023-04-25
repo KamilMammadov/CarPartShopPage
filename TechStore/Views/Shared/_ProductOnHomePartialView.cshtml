@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product item in Model.Take(8))
+{
+
+    <div id="product1" class="col-lg-3 col-xxl-3 col-xl-3 col-md-6 col-sm-6 col-12">
+
+        <div class="imageAndTextBox">
+            <div class="productBoxesSectionSliderForSingleProduct1">
+                <div class="box">
+                    <img width="100%" src="assets/images/product/@item.MainImage" alt="">
+                </div>
+            </div>
+            <div class="textPart">
+                <div class="title d-flex justify-content-center">
+                    <span>-</span>
+                    <div class="text">
+                        @item.Category.Name
+                    </div>
+                </div>
+                <div class="productDescription">
+                    <a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id">@item.Name</a>
+                </div>
+                <div class="priceSection d-flex">
+                    <div class="discount">
+                        $@item.Price
+                    </div>
+                    <div class="sale">
+                        <del>
+                            $@item.DiscountedPrice
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <div class="onHoverBasketCompareWishList">
+                <div class="top">
+                    <a class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@item.Id"><img src="~/assets/images/cart.png" alt=""> <span>Add to Cart</span></a>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <a href="compare.html"><img src="assets/images/compare.png" alt=""> Compare</a>
+                    </div>
+                    <div class="right">
+                        <a  asp-controller="wishlist" asp-action="addtobasket" asp-route-id="@item.Id"><img src="assets/images/wishlist.png" alt=""> Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

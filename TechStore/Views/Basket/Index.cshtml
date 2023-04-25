@@ -1,0 +1,76 @@
+﻿@model List<BasketVM>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- main -->
+<main id="cartMain">
+    <div class="breadcrumbGeneral">
+        <div class="container">
+           
+        </div>
+    </div>
+    <div class="container">
+        <div class="generalCart">
+            <div class="row">
+                <div class="col-lg-8 col-xl-8 col-xxl-8 col-12 col-md-12 col-sm-12">
+                    <div class="leftCart">
+                        <h3>Shooping Cart</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody class="basketindexcontainer">
+                                @await Html.PartialAsync("_BasketPartial", Model)
+                            </tbody>
+                        </table>
+                        
+
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-xl-4 col-xxl-4 col-sm-12 col-md-12 col-12">
+                    <div class="rightCart">
+                        <h3>Cart Totals</h3>
+                        <div class="subtotal d-flex">
+                            <p>Subtotal</p>
+                            <div class="subtotalPrice"></div>
+                        </div>
+                        <div class="shipping d-flex">
+                            <p>Shipping</p>
+                            <div class="rightPartForShipping">
+                                <div class="flatRate">
+                                    <input type="checkbox">
+                                    <span>Flat Rate: <span>$3.00</span></span>
+                                </div>
+                                <div class="free">
+                                    <input type="checkbox">
+                                    <span>Free Shipping</span>
+                                </div>
+                                <p class="calculateShipping">Calculate Shipping</p>
+                            </div>
+                        </div>
+                        <div class="total">
+                            <p>Total</p>
+                            <div class="totalPrice">$@(Model.Sum(b => b.Price * b.Count))</div>
+                        </div>
+                        <div class="buttons">
+                            <button id="firstBtn">
+                                Update Cart
+                            </button>
+                            <button id="ProceedToCheckout">
+                                Proceed To Checkout
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   @await Component.InvokeAsync("Services")
+</main>

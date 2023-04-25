@@ -1,0 +1,112 @@
+﻿@model IDictionary<string,string>
+    <footer>
+           <div class="top">
+               <div class="container">
+                   <div class="row align-items-baseline">
+                       <div class="FooterTopMobile col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-8 col-md-4 d-flex align-items-baseline flex-wrap">
+                           <img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="footerLogo").Value" alt="">
+                           <div class="call d-flex align-items-center flex-nowrap">
+                               <div class="logo">
+                                   <img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="callLogo").Value" alt="">
+                               </div>
+                               <div class="text">
+                                   <p class="question">Got Questions ? Call us 24/7!</p>
+                                   <p class="phone">Call Us:  @Model.FirstOrDefault(s => s.Key == "Phone").Value </p>
+                                   <p class="address">@Model.FirstOrDefault(s=>s.Key== "Address").Value</p>
+                               </div>
+                           </div>
+                           <div class="icons">
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="Facebook").Value">
+                                   <i class="fa-brands fa-facebook-f"></i>
+                               </a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="Instagram").Value"><i class="fa-brands fa-instagram"></i></a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="twitter").Value"><i class="fa-brands fa-twitter"></i></a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="pinterest").Value"><i class="fa-brands fa-pinterest-p"></i></a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="vime").Value"><i class="fa-brands fa-vimeo"></i></a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="Facebook").Value"><i class="fa-brands fa-facebook-f"></i></a>
+                               <a href="@Model.FirstOrDefault(s=>s.Key=="google").Value"><i class="fa-brands fa-google"></i></a>
+                           </div>
+                       </div>
+                       <div class="FooterTopMobile col-lg-2 col-xl-2 col-xxl-2 col-12 col-sm-2 col-md-2">
+                           <h3>Categories</h3>
+                           <ul>
+                               <li><a asp-controller="shop" asp-action="index">Software</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Phones</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Components</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Tablets</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Software</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Phones</a></li>
+                           </ul>
+                       </div>
+                       <div class="FooterTopMobile col-lg-2 col-xl-2 col-xxl-2 col-12 col-sm-6 col-md-2">
+                           <h3>Customer Care</h3>
+                           <ul>
+                               <li><a asp-controller="shop" asp-action="index">Desktops</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Phones</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Components</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Tablets</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Software</a></li>
+                               <li><a asp-controller="shop" asp-action="index">Phones</a></li>
+                           </ul>
+                       </div>
+                       <div class="FooterTopMobile col-lg-4 col-xl-4 col-xxl-4 col-12 col-sm-6 col-md-4">
+                           <h3>Sign Up To New Letter</h3>
+                           <p>
+                               Make sure that you never miss our interesting
+                               news by joining our newsletter program
+                           </p>
+                           <div class="input">
+                               <input type="email" placeholder="Your E-Mail">
+                               <img src="~/assets/images/right-2.png" alt="">
+                           </div>
+                           <div class="bottomForPay">
+                               <a href=""><img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="paypal").Value" alt=""></a>
+                               <a href=""><img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="discover").Value" alt=""></a>
+                               <a href=""><img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="visa").Value" alt=""></a>
+                               <a href=""><img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="mastercard").Value" alt=""></a>
+                               <a href=""><img src="~/assets/images/@Model.FirstOrDefault(s=>s.Key=="americanexpress").Value" alt=""></a>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="mobileApp">
+                       <div class="mobileAppTitle text-center">
+                           <h3>Mobile Apps</h3>
+
+                       </div>
+                       <ul class="d-flex justify-content-center align-items-center">
+                           <li class="d-flex flex-wrap align-items-center">
+                               <div class="img">
+                                   <img src="~/assets/images/app-store.png" alt="">
+                               </div>
+                               <div class="text">
+                                   <h4>App Store</h4>
+                                   <p>Available now on the</p>
+                               </div>
+                           </li>
+                           <li class="d-flex flex-wrap align-items-center">
+                               <div class="img">
+                                   <img src="~/assets/images/google-play.png" alt="">
+                               </div>
+                               <div class="text">
+                                   <h4>Google Play</h4>
+                                   <p>Get in on</p>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+           <div class="bottom">
+               <div class="container">
+                   <div class="row align-items-center">
+                       <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6">
+                           <p> All Rights Reserved © Techno Store 2017</p>
+                       </div>
+                       <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6 text-end">
+                           <a href="#top"><img src="~/assets/images/top.png" alt=""></a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </footer>

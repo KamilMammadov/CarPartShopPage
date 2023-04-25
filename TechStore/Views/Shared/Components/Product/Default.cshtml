@@ -1,0 +1,31 @@
+﻿@model ProductVM
+
+<section id="productBoxesNewArrivalFeaturedTopSelling">
+    <div class="productBoxesNewArrivalFeaturedTopSellingGeneral">
+        <div class="container">
+            <div class="productTab">
+                <ul class="d-flex">
+                    <li><a id="productBoxNewArrival" href="">New Arrivals</a></li>
+                    <li><a id="productBoxFeatured" href="">Featured</a></li>
+                    <li><a id="productBoxTopSelling" href="">Top Selling</a></li>
+                </ul>
+            </div>
+            <div class="productBox productBoxNewArrival">
+                <div class="row justify-content-between">
+                        @Html.Partial("_ProductOnHomePartialView", Model.NewArrivals)
+                </div>
+            </div>
+            <div class="productBox productBoxFeatured">
+                <div class="row justify-content-between">
+                        @Html.Partial("_ProductOnHomePartialView", Model.BestSellers)
+                </div>
+            </div>
+            <div class="productBox productBoxTopSelling">
+                <div class="row justify-content-between">
+                        @Html.Partial("_ProductOnHomePartialView", Model.Featured)
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

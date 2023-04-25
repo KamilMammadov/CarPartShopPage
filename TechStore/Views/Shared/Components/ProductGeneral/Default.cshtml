@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product product in Model)
+{
+
+    <div id="product1" class="col-lg-4 col-xxl-4 col-xl-4 col-md-6 col-sm-6 col-12">
+        <div class="imageAndTextBox">
+            <div class="productBoxesSectionSliderForSingleProduct1">
+                <div class="box">
+                    <img src="assets/images/product/@product.MainImage" alt="">
+                </div>
+            </div>
+            <div class="textPart">
+                <div class="title d-flex justify-content-center">
+                    <span>-</span>
+                    <div class="text">
+                        @product.Category.Name
+                    </div>
+                </div>
+                <div class="productDescription">
+                    <a asp-controller="shop" asp-action="detail" asp-route-id="@product.Id">@product.Name</a>
+                </div>
+                <div class="priceSection d-flex">
+                    <div class="discount">
+                        $@product.DiscountedPrice
+                    </div>
+                    <div class="sale">
+                        <del>
+                            $@product.Price
+                        </del>
+                    </div>
+                </div>
+            </div>
+            <div class="onHoverBasketCompareWishList">
+                <div class="top">
+                    <button><img src="assets/images/cart.png" alt=""> <span>Add to Cart</span></button>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <a href="compare.html"><img src="assets/images/compare.png" alt=""> Compare</a>
+                    </div>
+                    <div class="right">
+                        <a><img src="assets/images/wishlist.png" alt=""> Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

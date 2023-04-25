@@ -1,0 +1,31 @@
+﻿@model List<WishlistVM>
+
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            <div class="image">
+                <img src="~/assets/images/product/@item.Image" alt="">
+            </div>
+            <div class="name">
+                <p>
+                    @item.Title
+                </p>
+            </div>
+            <div class="price">
+                <p>$@item.Price</p>
+            </div>
+                    <div class="trash">
+                        <a asp-controller="wishlist" asp-action="DeleteFromCart" asp-route-id="@item.ProductId">
+                            <img src="~/assets/images/delete.png" alt="">
+
+                        </a>
+
+
+                    </div>
+        </td>
+
+        
+    </tr>
+
+}

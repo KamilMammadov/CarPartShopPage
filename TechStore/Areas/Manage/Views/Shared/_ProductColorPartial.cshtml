@@ -1,0 +1,19 @@
+﻿@model Product
+<div class="row">
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label>Select Color</label>
+            <select class="form-control" name="ColorIds[]" asp-items="@new SelectList(ViewBag.Color, nameof(Color.Id), nameof(Color.Name))">
+                <option value="">Choose...</option>
+            </select>
+            <span asp-validation-for="ColorIds" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="form-group">
+            <label>Enter Count of Product</label>
+            <input class="form-control" name="Counts[]" placeholder="Enter Count" />
+            <span asp-validation-for="Count" class="text-danger"></span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+﻿@model IEnumerable<SpecialOffer>
+
+
+ <section id="specialOffer">
+            <div class="container">
+                <div class="row specialOffer">
+@foreach (SpecialOffer item in Model)
+{
+
+    <div class="col-lg-12">
+        <div class="row">
+            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-12 col-sm-12 pe-0 LEFT">
+                <div class="top d-flex justify-content-end align-items-center">
+                    <div class="icons d-flex align-items-center justify-content-between">
+                        <div class="arrowRight">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </div>
+                        <div class="arrowLeft">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                    </div>
+                    <p>Special Offer</p>
+                </div>
+                <p class="ph">
+                    @item.Description
+                </p>
+            </div>
+            <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-12 col-sm-12 ps-0 RIGHT">
+                <div class="rightGeneral">
+                    <div class="save">
+                        <p>Save $@item.Discount</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6">
+                            <a asp-controller="product" asp-action="index"><img src="~/assets/images/specialOffer/@item.Image" alt=""></a>
+                        </div>
+                        <div class="col-lg-6 col-xl-6 col-xxl-6 col-6 col-sm-6 col-md-6">
+                            <div class="productName">
+                                <a asp-controller="product" asp-action="detail" asp-route-id="@item.Id">@item.Product.Name</a>
+                            </div>
+                            <div class="productInfo">
+                                @item.Product.infoText
+                            </div>
+                            <div class="price d-flex align-items-center flex-nowrap">
+                                <div class="discount">
+                                    $@item.Product.Price
+                                </div>
+                                <div class="sale">
+                                    $@item.Product.DiscountedPrice
+                                </div>
+                            </div>
+                            <div class="button">
+                                <button class="d-flex align-items-center">
+                                    <a style="color:white" class="addtobasket" asp-controller="basket" asp-action="addtobasket" asp-route-id="@item.ProductId">Add to Cart</a>
+
+                                </button>
+                            </div>
+                            <div class="compareWishlist d-flex flex-nowrap align-items-center">
+                                <div class="compare">
+                                    <a href="compare.html" class="d-flex align-items-center flex-nowrap">
+                                        <img src="~/assets/images/compare.png" alt=""> <span>Compare</span>
+                                    </a>
+                                </div>
+                                <div class="wishlist">
+                                    <a asp-controller="wishlist" asp-action="addtobasket" asp-route-id="@item.Id" class="d-flex align-items-center flex-nowrap">
+                                        <img src="~/assets/images/wishlist.png" alt=""> <span>Wishlist</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+                </div>
+            </div>
+        </section>

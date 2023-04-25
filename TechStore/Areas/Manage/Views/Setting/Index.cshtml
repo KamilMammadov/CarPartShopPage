@@ -1,0 +1,40 @@
+﻿@model Dictionary<string, string>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="row">
+    <div class="col-lg-6 h3 mb-4 text-gray-800">
+        <h1>Settings</h1>
+    </div>
+    <div class="col-lg-12">
+        <table class="table table-striped">
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @item.Key
+                    </td>
+                    <td>
+                        @if (item.Value.Contains(".png"))
+                        {
+                            <img src="~/assets/images/@item.Value" alt="Alternate Text" style="width:7%" />
+                        }
+                        else
+                        {
+                            @item.Value
+                        }
+
+                    </td>
+                   
+                    <td>
+                        <a class="btn btn-warning" asp-action="Update" asp-route-key="@item.Key">Update</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

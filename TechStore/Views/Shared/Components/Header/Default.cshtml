@@ -1,0 +1,1135 @@
+﻿@model HeaderVM
+
+<header>
+    <div class="top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-5 col-xl-4 col-xxl-4 col-sm-12 col-12">
+                    <ul class="support">
+                        <li>
+                            <a href="faq.html">Support</a>
+                        </li>
+                        <li>
+                            <a href="store-location.html">Store Locator</a>
+                        </li>
+                        <li>
+                            <a href="order-tracking.html">Track Your Order</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-3 col-xl-4 col-xxl-4 col-sm-12 col-12">
+                    <ul class="phone">
+                        <li>
+                           @* <span>Call Us:</span><a href=""> @Model.Settings.First(s => s.Key == "Phone").Value </a>*@
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xl-4 col-xxl-4 col-sm-12 col-12">
+                    <ul class="accountAndLanguages">
+                        <li class="myAccount">
+                            <i id="triangle" class="fa-solid fa-caret-up"></i>
+                            <a href="">My Account <i class="fa-solid fa-angle-down"></i></a>
+                            <div class="myAccountList">
+                                <a asp-controller="account" asp-action="login">Login</a>
+                                <a asp-controller="wishlist" asp-action="index">Wishlist</a>
+                            </div>
+                        </li>
+                        
+                       
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                    <div class="logo">
+                        <a asp-controller="home" asp-action="index"><img src="~/assets/images/logo.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-5 col-sm-12 col-12">
+                    <div class="header-search">
+                        <div id="overlay" onclick="off()"></div>
+                        <form action="#">
+                            <div id="categoryInputOnSearch" class="category">
+                                All Category <i class="fa-solid fa-angle-down"></i>
+                                <div class="allCategories">
+                                    @foreach (Category category in Model.Categories.Where(c=>c.IsMain==true))
+                                    {
+
+                                    <div class="title">
+                                        @category.Name
+                                    </div>
+                                    <ul>
+                                        @foreach (var item in category.Children)
+                                        {
+                                        <li>@item.Name</li>
+
+                                        }
+                                    </ul>
+                                        
+                                    }
+                                </div>
+                            </div>
+                            <input id="inputSearch" onclick="on()" type="text" placeholder="Search what you looking for?">
+                            <button><img src="~/assets/images/search.png" alt=""></button>
+                        </form>
+                        <div class="searchSuggestions">
+                            <div class="row">
+                                <div class="col-lg-7">
+                                    <div class="suggestions">
+                                        <div class="title">
+                                            Search Suggestions
+                                        </div>
+                                        @foreach (var item in Model.Products.Take(4))
+	{
+                                        <div class="row align-items-center mb-3">
+                                            <div class="col-lg-3">
+                                                <img src="~/assets/images/product/@item.MainImage" alt="product">
+                                            </div>
+                                            <div class="col-lg-9">
+                                                <div class="name">
+                                                    <a href="">@item.Name</a>
+                                                </div>
+                                                <div class="price">
+                                                    <div class="sale">
+                                                        $@item.DiscountedPrice
+                                                    </div>
+                                                    <div class="regular">
+                                                        $@item.Price
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+		 
+	}
+                                    </div>
+                                </div>
+                                <div class="col-lg-5">
+                                    <div class="categories">
+                                        <div class="title">
+                                            Categories
+                                        </div>
+                                        <ul>
+                                           @foreach (var item in Model.Categories.Take(5))
+                                           {
+                                            <li>
+                                                <a href="">@item.Name</a>
+                                            </li>
+		 
+	}
+
+                                           
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-12 col-sm-12">
+                    <div class="compareWishBasket">
+                        <div class="row align-items-center rightForMiddle">
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-3 col-sm-3">
+                                <div class="inner-box">
+                                    <a href="compare.html">
+                                        <img src="~/assets/images/compare.png" alt="compare">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-3 col-sm-3">
+                                <div class="inner-box">
+                                    <a  asp-controller="wishlist" asp-action="index">
+                                        <img src="~/assets/images/wishlist.png" alt="wishlist">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-3 col-sm-3 basketIcon">
+                                <div class="inner-box">
+                                    <a  asp-controller="basket" asp-action="index">
+                                        <img src="~/assets/images/cart.png" alt="cart">
+                                    </a>
+
+                                </div>
+                                <i id="triangle" class="fa-solid fa-caret-up"></i>
+                                <div class="basket header-cart" id="headerCart">
+                                    @await Html.PartialAsync("_BasketCartPartial", Model.BasketVMs)
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-3 col-sm-3 lastForPrice">
+                                <div class="price">
+                                    $0.00
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3">
+                    <div class="megaMenu">
+                        <div class="btnMega text-center">
+                            <i class="fa-solid fa-bars"></i>
+                            ALL CATEGORIES
+                        </div>
+                        <div class="megaMenuList">
+                            <ul>
+                                @foreach (Category mainCategory in Model.Categories.Where(c=>c.IsMain).Take(9))
+                                {
+
+                                     <li class="laptopMac">
+                                        <a href="">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-3 col-md-3 col-3 col-sm-3 col-xl-3 col-xxl-3">
+                                                    <img src="~/assets/images/category-icon/@mainCategory.Image" alt="">
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 col-6 col-sm-6 col-xl-6 col-xxl-6">
+                                                    <span>@mainCategory.Name</span>
+                                                </div>
+                                                @if (mainCategory.Children != null && mainCategory.Children.Count() > 1)
+                                                {
+                                                    <div class="col-lg-1 col-md-1 col-1 col-sm-1 col-xl-1 col-xxl-1">
+                                                        <i class="fa-solid fa-angle-right"></i>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </a>
+                                    @if(mainCategory.Children!=null && mainCategory.Children.Count() > 1)
+                                    {
+                                        <div class="megaMenuListSubList">
+                                            <div class="row">
+                                                @foreach (Category child in mainCategory.Children.Take(2))
+                                                {
+                                                <div class="col-lg-4 col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4">
+                                                    <h2>
+                                                       @child.Name
+                                                    </h2>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="">Networking & Internet Devices</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="">Shop All</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                }
+
+                                                <div class="col-lg-4 col-xxl-4 col-xl-4 col-md-4 col-sm-4 col-4 rightOnSubCategoryList">
+                                                    <div class="row">
+                                                        <div class="col-lg-12 col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="row align-items-center boxForSubCategoryList">
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <h1>Phone</h1>
+                                                                    <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                                                                </div>
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <img src="~/assets/images/menu/menu-01.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="row align-items-center boxForSubCategoryList">
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <h1>Computer</h1>
+                                                                    <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                                                                </div>
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <img src="~/assets/images/menu/menu-02.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                                                            <div class="row align-items-center boxForSubCategoryList">
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <h1>Headphones</h1>
+                                                                    <a href="">Shop Now <i class="fa-solid fa-arrow-right"></i></a>
+                                                                </div>
+                                                                <div class="col-lg-6 col-xxl-6 col-xl-6 col-md-6 col-sm-6 col-6">
+                                                                    <img src="~/assets/images/menu/menu-03.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                         }
+                                     </li>
+
+                                    
+                                }
+                                </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <ul class="mainNav">
+                        <li class="homeOnMainNav">
+                            <a asp-controller="home" asp-action="index">Home</a>
+                            </li>
+                        <li class="shopOnMainNav">
+                            <a asp-controller="shop" asp-action="index">Shop</a>
+                            <ul class="homeOnMainNavList">
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="shop" asp-action="index">Shop right sidebar</a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="basket" asp-action="index">Shop Cart</a></li>
+                              
+                            </ul>
+                        </li>
+                        <li class="featuresOnMainNav">
+                            <a href="">Features</a>
+
+                        </li>
+                        <li class="electronicsOnMainNav">
+                            <a href="">Electronics</a>
+                        </li>
+                        <li class="pagesOnMainNav">
+                            <a href="">Pages</a>
+                            <ul class="homeOnMainNavList">
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="about" asp-action="index">About</a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="category" asp-action="index">Category</a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="brand" asp-action="index">Brand</a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="faq" asp-action="index">FAQ</a></li>
+                                <li><i class="fa-solid fa-chevron-right"></i><a asp-controller="term" asp-action="index">Terms & Conditions</a></li>
+                               
+                            </ul>
+                        </li>
+                        <li class="blogOnMainNav">
+                            <a asp-controller="blog" asp-action="index">Blog</a>
+
+                        </li>
+                        <li class="contactOnMainNav">
+                            <a asp-controller="contact" asp-action="index">Contact</a>
+
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 text-end todayDeals">
+                    <a href="">TODAY DEALS</a>
+                    <div class="underline">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottomForMobileGeneral">
+        <div class="row align-items-center d-flex justify-content-around text-white bottomForMobile">
+            <div class="col-md-5 col-sm-5 col-5 leftOnBottomForMobile">
+                <i id="iconleftOnBottomForMobile" class="fa-solid fa-bars"></i>
+            </div>
+            <div class="col-md-5 col-sm-5 col-5 text-end rightOnBottomForMobile">
+                <i id="iconrightOnBottomForMobile" class="fa-solid fa-bars"></i>
+                <span>Today Deals</span>
+            </div>
+        </div>
+        <div id="bottomForMobileList" class="bottomForMobileList">
+            <ul>
+                <li class="laptopMac">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class=" col-md-1 col-1 col-sm-1">
+                                    <img src="~/~/assets/images/category-icon/01.png" alt="">
+                                </div>
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Laptops & Mac</span>
+                                </div>
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <i id="icon1ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <ul id="icon1ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon1ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <ul id="icon1ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobileAndTablet">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class=" col-md-8 col-8 col-sm-8">
+                                            <span>Mobile and Tablet</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon1ForParentChildList2" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon1ForParentChildListUl2">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mobileAndTablet">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <img src="~/assets/images/category-icon/02.png" alt="">
+                                </div>
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Mobile and Tablet</span>
+                                </div>
+                                <div class=" col-md-1 col-1 col-sm-1">
+                                    <i id="icon2ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon2ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon2ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon2ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobileAndTablet">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class=" col-md-8 col-8 col-sm-8">
+                                            <span>Mobile and Tablet</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon2ForParentChildList2" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon2ForParentChildListUl2">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="homeDevices">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <img src="~/assets/images/category-icon/03.png" alt="">
+                                </div>
+                                <div class="col-md-10 col-10 col-sm-10">
+                                    <span>Home Devices</span>
+                                </div>
+                                <div class=" col-md-1 col-1 col-sm-1 ">
+                                    <i id="icon3ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon3ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon3ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon3ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobileAndTablet">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class=" col-md-8 col-8 col-sm-8">
+                                            <span>Mobile and Tablet</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon3ForParentChildList2" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon3ForParentChildListUl2">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-lg-1 col-md-1 col-1 col-sm-1 col-xl-1 col-xxl-1">
+                                    <img src="~/assets/images/category-icon/04.png" alt="">
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-10 col-sm-10 col-xl-10 col-xxl-10">
+                                    <span>Software</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="parentList">
+
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-lg-1 col-md-1 col-1 col-sm-1 col-xl-1 col-xxl-1">
+                                    <img src="~/assets/images/category-icon/05.png" alt="">
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-10 col-sm-10 col-xl-10 col-xxl-10">
+                                    <span>TV & Audio</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-lg-1 col-md-1 col-1 col-sm-1 col-xl-1 col-xxl-1">
+                                    <img src="~/assets/images/category-icon/06.png" alt="">
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-10 col-sm-10 col-xl-10 col-xxl-10">
+                                    <span>Sports & Fitness</span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </li>
+                <li class="gamesAndToys">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <img src="~/assets/images/category-icon/07.png" alt="">
+                                </div>
+                                <div class="col-md-10 col-10 col-sm-10">
+                                    <span>Games & Toys</span>
+                                </div>
+                                <div class=" col-md-1 col-1 col-sm-1">
+                                    <i id="icon4ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <ul id="icon4ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon4ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon4ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobileAndTablet">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class=" col-md-8 col-8 col-sm-8">
+                                            <span>Mobile and Tablet</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon4ForParentChildList2" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon4ForParentChildListUl2">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-lg-1 col-md-1 col-1 col-sm-1 col-xl-1 col-xxl-1">
+                                    <img src="~/assets/images/category-icon/08.png" alt="">
+                                </div>
+                                <div class="col-lg-10 col-md-10 col-10 col-sm-10 col-xl-10 col-xxl-10">
+                                    <span>Video Cameras</span>
+
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </li>
+                <li class="Accessories">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class=" col-md-1 col-1 col-sm-1">
+                                    <img src="~/assets/images/category-icon/09.png" alt="">
+                                </div>
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Accessories</span>
+
+                                </div>
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <i id="icon5ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon5ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon5ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon5ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mobileAndTablet">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class=" col-md-8 col-8 col-sm-8">
+                                            <span>Mobile and Tablet</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon5ForParentChildList2" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon5ForParentChildListUl2">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="Security">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-1 col-1 col-sm-1">
+                                    <img src="~/assets/images/category-icon/10.png" alt="">
+                                </div>
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Security</span>
+
+                                </div>
+                                <div class=" col-md-1 col-1 col-sm-1">
+                                    <i id="icon6ForParentList" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon6ForParentListUl">
+                        <li class="laptopMac">
+                            <div class="parentChildList">
+                                <a href="">
+                                    <div class="row align-items-center justify-content-center">
+                                        <div class="col-md-8 col-8 col-sm-8">
+                                            <span>Laptops & Mac</span>
+                                        </div>
+                                        <div class=" col-md-1 col-1 col-sm-1">
+                                            <i id="icon6ForParentChildList1" class="fa-solid fa-angle-down"></i>
+                                        </div>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <ul id="icon6ForParentChildListUl1">
+                                <li class="laptopMac">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class="col-md-8 col-8 col-sm-8">
+                                                    <span>Laptops & Mac</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </li>
+                                <li class="mobileAndTablet">
+                                    <div class="parentChildList">
+                                        <a href="">
+                                            <div class="row align-items-center justify-content-center">
+                                                <div class=" col-md-8 col-8 col-sm-8">
+                                                    <span>Mobile and Tablet</span>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="bottomForMobileListRight" class="bottomForMobileListRight">
+            <ul>
+                <li class="laptopMac">
+                    <div class="parentList">
+                        <a href="index.html">
+                            <div class="row align-items-center">
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Home</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon1ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon1ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Home</li>
+                    </ul>
+                </li>
+                <li class="mobileAndTablet">
+                    <div class="parentList">
+                        <a asp-controller="shop" asp-action="index">
+                            <div class="row align-items-center">
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Shop</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon2ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <ul id="icon2ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Shop left sidebar</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Shop Cart</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Shop Checkout</li>
+                    </ul>
+                </li>
+                <li class="homeDevices">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-10 col-10 col-sm-10">
+                                    <span>Features</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon3ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon3ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Lorem ipsum dolor sit amet.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Lorem ipsum dolor sit.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Lorem, ipsum dolor.</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-10 col-10 col-sm-10">
+                                    <span>Electronics</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon4ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon4ForParentListRightList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Components</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Laptop</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Monitor</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Mp3 player</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Scanners</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Pages</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon5ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <ul id="icon5ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>About</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>404 Page</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Brand</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>FAQ</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Order Tracking</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Terms & Conditions</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Single Product</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="parentList">
+
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class=" col-md-10 col-10 col-sm-10">
+                                    <span>Blog</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon6ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <ul id="icon6ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Blog left sidebar</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Blog right sidebar</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Blog Lorem, ipsum.</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Blog Lorem, ipsum.</li>
+                    </ul>
+                </li>
+                <li class="gamesAndToys">
+                    <div class="parentList">
+                        <a href="">
+                            <div class="row align-items-center">
+                                <div class="col-md-10 col-10 col-sm-10">
+                                    <span>Contact</span>
+                                </div>
+                                <div class="col-md-2 col-2 col-sm-2 text-center">
+                                    <i id="icon7ForParentListRight" class="fa-solid fa-angle-down"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <ul id="icon7ForParentListRightList" class="homeOnMainNavList">
+                        <li><i class="fa-solid fa-chevron-right"></i>Contact</li>
+                        <li><i class="fa-solid fa-chevron-right"></i>Contact2</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</header>

@@ -1,0 +1,6180 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+@media (max-width: 576px) {
+  main .mainSliderSection .generalForSlider .image img {
+    display: none !important;
+  }
+  main .mainSliderSection .generalForSlider .image #backImage {
+    right: 1rem !important;
+    top: -7rem !important;
+  }
+  main .mainSliderSection .generalForSlider .priceDiscount {
+    margin-top: -0.7rem !important;
+    margin-bottom: 2rem !important;
+  }
+  main .RIGHT button {
+    padding: 0.4rem 1rem !important;
+  }
+  footer .FooterTopMobile {
+    margin-bottom: 2rem !important;
+  }
+}
+@media (max-width: 768px) {
+  header .top .accountAndLanguages {
+    justify-content: center !important;
+  }
+  header .top .accountAndLanguages .myAccountList {
+    top: 30px !important;
+  }
+  header .top .UsdList {
+    top: 30px !important;
+  }
+  header .top .EnglishList {
+    top: 30px !important;
+  }
+  header .top #triangle {
+    top: 18px !important;
+  }
+  header .top .support {
+    justify-content: center;
+  }
+  header .middle {
+    overflow: hidden;
+  }
+  header .middle .logo img {
+    width: 40% !important;
+  }
+  header .middle .logo {
+    text-align: center;
+  }
+  header .middle .lastForPrice {
+    display: none;
+  }
+  header .middle .rightForMiddle {
+    justify-content: center;
+  }
+  header .middle .basketIcon #triangle {
+    left: 400px !important;
+  }
+  header .middle .basketIcon .basket {
+    width: 65% !important;
+    left: 110px !important;
+  }
+  header .bottom {
+    display: none;
+  }
+  header .bottomForMobileGeneral {
+    overflow: hidden;
+    display: block !important;
+  }
+  main #mainSliderSection {
+    padding: 1.9rem 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection {
+    margin: 0rem 1rem !important;
+    padding: 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider p {
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider h2 {
+    font-size: 44px !important;
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider span {
+    font-size: 44px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection {
+    display: inline-block !important;
+    margin-left: 40px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection .shopNow {
+    margin-top: 10px;
+  }
+  main #mainSliderSection .mainSliderSection .priceDiscount {
+    margin-left: 70px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider {
+    padding: 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .generalForSlider .image img {
+    display: none;
+  }
+  main #mainSliderSection .mainSliderSection .generalForSlider .image #backImage {
+    display: block !important;
+    right: 1rem !important;
+    top: -7rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .generalForSlider .priceDiscount {
+    margin-top: -0.7rem !important;
+    margin-bottom: 2rem !important;
+  }
+  main #banner {
+    display: none !important;
+  }
+  main .textPart .text {
+    left: 42% !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList button {
+    padding: 0.1rem 0.5rem !important;
+    font-size: 10px !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .box {
+    width: 100%;
+    padding: 1rem;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .box img {
+    padding: 0.4rem !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .textPart span {
+    padding: 0rem 3rem !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .text {
+    left: 22% !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .priceSection .sale {
+    display: none;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .bottom {
+    font-size: 10px !important;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBoxLeft {
+    padding: 4rem 0rem !important;
+  }
+  main #highlights .heading {
+    margin-top: 20px;
+  }
+  main .boox {
+    margin-top: 20px;
+  }
+  footer .FooterTopMobile {
+    margin-bottom: 2rem !important;
+  }
+  #cartMain .totalPrice {
+    width: 50% !important;
+    font-size: 10px !important;
+  }
+  #cartMain .trash {
+    margin: 0;
+  }
+  #aboutMain #second a {
+    margin-top: 20px !important;
+  }
+  #aboutMain #second p {
+    margin-bottom: 30px !important;
+  }
+  #aboutMain #second img {
+    width: 100% !important;
+  }
+}
+@media (max-width: 991px) {
+  header .searchSuggestions {
+    display: none;
+  }
+  header #overlay {
+    display: none !important;
+  }
+  header .top .accountAndLanguages {
+    justify-content: center !important;
+  }
+  header .top .accountAndLanguages .myAccountList {
+    top: 30px !important;
+  }
+  header .top .UsdList {
+    top: 30px !important;
+  }
+  header .top .EnglishList {
+    top: 30px !important;
+  }
+  header .top #triangle {
+    top: 18px !important;
+  }
+  header .top .support {
+    justify-content: center;
+  }
+  header .middle {
+    overflow: hidden;
+  }
+  header .middle .logo img {
+    width: 100%;
+  }
+  header .middle #categoryInputOnSearch {
+    display: none;
+  }
+  header .middle input {
+    padding-left: 1rem !important;
+  }
+  header .middle .logo {
+    text-align: center;
+  }
+  header .middle .lastForPrice {
+    display: none;
+  }
+  header .middle .rightForMiddle {
+    justify-content: center;
+  }
+  header .middle .basketIcon #triangle {
+    left: 400px !important;
+  }
+  header .middle .basketIcon .basket {
+    width: 65% !important;
+    left: 110px !important;
+  }
+  header .bottom {
+    display: none;
+  }
+  header .bottomForMobileGeneral {
+    overflow: hidden;
+    display: block !important;
+  }
+  .addtoCatButtoon button {
+    padding: 0.3rem 0 !important;
+  }
+  main #mainSliderSection {
+    padding: 1.9rem 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection {
+    margin: 0rem 1rem !important;
+    padding: 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider p {
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider h2 {
+    font-size: 44px !important;
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider span {
+    font-size: 44px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection {
+    display: inline-block !important;
+    margin-left: 40px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection .shopNow {
+    margin-top: 10px;
+  }
+  main #mainSliderSection .mainSliderSection .priceDiscount {
+    margin-left: 70px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider {
+    padding: 0rem !important;
+  }
+  main .textPart .text {
+    left: 42% !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList button {
+    padding: 0.1rem 0.5rem !important;
+    font-size: 10px !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .box {
+    width: 100%;
+    padding: 1rem;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .box img {
+    padding: 0.4rem !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .textPart span {
+    padding: 0rem 3rem !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .text {
+    left: 27% !important;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .priceSection .sale {
+    display: none;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBox .bottom {
+    font-size: 10px !important;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  main #categories .categoryGeneral .productPart .imageAndTextBoxLeft {
+    padding: 4rem 0rem !important;
+  }
+  main #specialOffer {
+    overflow: hidden;
+  }
+  main #specialOffer .LEFT {
+    padding-right: 10px !important;
+  }
+  main #specialOffer .LEFT .ph {
+    text-align: center;
+  }
+  main #specialOffer .LEFT .countDown {
+    justify-content: center !important;
+  }
+  main #specialOffer .RIGHT {
+    padding-left: 10px !important;
+  }
+  #singleProduct .rightCart {
+    margin-top: 30px;
+  }
+  footer .FooterTopMobile {
+    margin-bottom: 2rem !important;
+  }
+  #shopMain {
+    overflow: hidden;
+  }
+  #shopMain .basket img {
+    width: 50% !important;
+  }
+  #shopMain .banner {
+    margin-top: 150px !important;
+  }
+}
+@media (max-width: 1025px) {
+  header {
+    overflow: hidden;
+  }
+  header .bottom .megaMenu {
+    left: 20px !important;
+  }
+  main #mainSliderSection {
+    padding: 1.9rem 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection {
+    margin: 0rem 1rem !important;
+    padding: 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider p {
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider h2 {
+    font-size: 44px !important;
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider span {
+    font-size: 44px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection {
+    margin-left: 40px !important;
+  }
+  main #mainSliderSection .mainSliderSection .priceDiscount {
+    margin-left: 70px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider {
+    padding: 0rem !important;
+  }
+  main #productBoxesNewArrivalFeaturedTopSelling .productBox .box img {
+    width: 70%;
+  }
+  footer .top .container {
+    margin: 0 20px !important;
+  }
+  #servicesCart h3 {
+    margin: 5px 0 !important;
+    font-size: 15px !important;
+  }
+  #aboutMain #firstSection img {
+    position: static !important;
+  }
+}
+@media (max-width: 1281px) {
+  header {
+    overflow: hidden !important;
+  }
+  header .bottom .megaMenu {
+    left: 20px !important;
+  }
+  main #mainSliderSection {
+    padding: 1.9rem 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection {
+    margin: 0rem 1rem !important;
+    padding: 0rem !important;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider p {
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider h2 {
+    margin-left: 40px;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection {
+    display: inline-block !important;
+    margin-left: 40px !important;
+  }
+  main #mainSliderSection .mainSliderSection .buttonSection .shopNow {
+    margin-top: 10px;
+  }
+  main #mainSliderSection .mainSliderSection .priceDiscount {
+    margin-left: 70px;
+  }
+  main #mainSliderSection .mainSliderSection .leftForMainSlider {
+    padding: 0rem !important;
+  }
+  main #productBoxesNewArrivalFeaturedTopSelling .productBox .box img {
+    width: 70%;
+  }
+  #servicesCart h3 {
+    margin-bottom: 10px !important;
+    font-size: 15px !important;
+  }
+  #aboutMain #firstSection img {
+    position: static !important;
+    width: 100% !important;
+  }
+  #aboutMain #firstSection .Right {
+    margin-top: 30px !important;
+  }
+  #aboutMain #second img {
+    width: 80%;
+  }
+}
+.active {
+  display: block;
+}
+
+body .modal-content {
+  padding: 2rem;
+}
+body .modal-content h2 {
+  font-size: 25px;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  margin-bottom: 2rem;
+}
+body .modal-content .closeForModalOnBody {
+  position: absolute;
+  top: -20px;
+  right: -15px;
+  cursor: pointer;
+  border-radius: 100px;
+  padding: 0.7rem 0.9rem;
+  color: white;
+  font-size: 20px;
+  background-color: rgb(242, 139, 0);
+}
+body .modal-content p {
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 2rem;
+  line-height: 20px;
+}
+body .modal-content img {
+  width: 100%;
+}
+body .modal-content .inputForModal {
+  position: relative;
+}
+body .modal-content .inputForModal input {
+  padding: 0.4rem;
+  border-radius: 20px;
+  border: 2px solid rgb(229, 229, 229);
+  color: rgb(229, 229, 229);
+  margin-bottom: 2rem;
+  outline: 1px none transparent;
+  padding-left: 2rem;
+}
+body .modal-content .inputForModal i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+body .modal-content input {
+  border: 1px solid rgb(229, 229, 229);
+}
+body .modal-content span {
+  color: rgb(72, 72, 72);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+body header #overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+body header .top {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+body header .top a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+body header .top ul {
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+}
+body header .top ul :hover {
+  transition-duration: 0.3s;
+  color: rgb(242, 139, 0);
+}
+body header .top ul :last-child {
+  border: none;
+}
+body header .top ul :first-child {
+  padding-left: 0px;
+}
+body header .top ul li {
+  border-right: 1px solid rgb(229, 229, 229);
+  padding-right: 10px;
+  padding-left: 7px;
+}
+body header .top .accountAndLanguages {
+  justify-content: end;
+}
+body header .top .accountAndLanguages .myAccount {
+  position: relative;
+}
+body header .top .accountAndLanguages .myAccount .myAccountList {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 2;
+  border: 0.01px solid rgb(229, 229, 229);
+  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+body header .top .accountAndLanguages .myAccount .myAccountList a {
+  padding-bottom: 10px;
+}
+body header .top .accountAndLanguages .myAccount #triangle {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  color: rgb(229, 229, 229);
+}
+body header .top .accountAndLanguages .myAccount:hover .myAccountList {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+body header .top .accountAndLanguages .myAccount:hover #triangle {
+  visibility: visible;
+  opacity: 1;
+  top: 20px;
+}
+body header .top .accountAndLanguages .Usd {
+  position: relative;
+}
+body header .top .accountAndLanguages .Usd .UsdList {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 2;
+  border: 0.01px solid rgb(229, 229, 229);
+  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+body header .top .accountAndLanguages .Usd .UsdList a {
+  padding-bottom: 10px;
+}
+body header .top .accountAndLanguages .Usd #triangle {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  color: rgb(229, 229, 229);
+}
+body header .top .accountAndLanguages .Usd:hover .UsdList {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+body header .top .accountAndLanguages .Usd:hover #triangle {
+  visibility: visible;
+  opacity: 1;
+  top: 20px;
+}
+body header .top .accountAndLanguages .English {
+  position: relative;
+}
+body header .top .accountAndLanguages .English .EnglishList {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  z-index: 2;
+  border: 0.01px solid rgb(229, 229, 229);
+  border-radius: 7px;
+  padding: 10px;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+body header .top .accountAndLanguages .English .EnglishList a {
+  padding-bottom: 10px;
+}
+body header .top .accountAndLanguages .English #triangle {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  color: rgb(229, 229, 229);
+}
+body header .top .accountAndLanguages .English:hover .EnglishList {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+}
+body header .top .accountAndLanguages .English:hover #triangle {
+  visibility: visible;
+  opacity: 1;
+  top: 20px;
+}
+body header .top .phone {
+  justify-content: center;
+}
+body header .top .phone span {
+  color: rgb(242, 139, 0);
+}
+body header .top .phone li {
+  padding-right: 0;
+}
+body header .middle .logo {
+  margin: 2rem 0rem;
+}
+body header .middle .header-search {
+  margin: 2rem 0rem;
+  position: relative;
+  /* Handle on hover */
+}
+body header .middle .header-search :focus {
+  outline: none;
+}
+body header .middle .header-search .searchSuggestions {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  background-color: white;
+  width: 120%;
+  z-index: 8;
+  position: absolute;
+  top: 70px;
+  left: 0;
+}
+body header .middle .header-search .searchSuggestions .title {
+  margin-bottom: 25px;
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+body header .middle .header-search .searchSuggestions .suggestions {
+  background-color: white;
+  height: 350px;
+  padding: 20px 30px;
+}
+body header .middle .header-search .searchSuggestions .suggestions img {
+  width: 100%;
+}
+body header .middle .header-search .searchSuggestions .suggestions .name {
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+body header .middle .header-search .searchSuggestions .suggestions .name :hover {
+  color: rgb(242, 139, 0);
+}
+body header .middle .header-search .searchSuggestions .suggestions .price {
+  display: flex;
+  margin-top: 10px;
+}
+body header .middle .header-search .searchSuggestions .suggestions .price .sale {
+  margin-right: 15px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .middle .header-search .searchSuggestions .suggestions .price .regular {
+  color: rgb(197, 197, 197);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  text-decoration: line-through;
+}
+body header .middle .header-search .searchSuggestions .categories {
+  padding: 20px 30px;
+  background-color: rgb(245, 245, 245);
+  height: 350px;
+}
+body header .middle .header-search .searchSuggestions .categories ul li {
+  padding-bottom: 10px;
+}
+body header .middle .header-search .searchSuggestions .categories ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+body header .middle .header-search .category {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  cursor: pointer;
+  border-right: 1px solid rgb(229, 229, 229);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(114, 114, 114);
+}
+body header .middle .header-search .category i {
+  padding: 0rem 1rem;
+}
+body header .middle .header-search .allCategories {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 55px;
+  left: -20px;
+  z-index: 5;
+  background-color: white;
+  transition-duration: 0.3s;
+  width: 215px;
+  height: 250px;
+  overflow: auto;
+  text-align: justify;
+  border: 2px solid rgb(72, 72, 72);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+body header .middle .header-search .allCategories .title {
+  color: rgb(242, 139, 0);
+  margin-bottom: 8px;
+}
+body header .middle .header-search .allCategories ul {
+  padding-left: 0.7rem;
+  margin-bottom: 10px;
+}
+body header .middle .header-search .allCategories ul :hover {
+  transition-duration: 0.3s;
+  color: rgb(242, 139, 0);
+}
+body header .middle .header-search .allCategories ul li {
+  margin-bottom: 6px;
+}
+body header .middle .header-search ::-webkit-scrollbar {
+  width: 7px;
+}
+body header .middle .header-search ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+body header .middle .header-search ::-webkit-scrollbar-thumb {
+  background: rgb(242, 139, 0);
+  border-radius: 10px;
+}
+body header .middle .header-search ::-webkit-scrollbar-thumb:hover {
+  background: rgb(207, 118, 2);
+}
+body header .middle .header-search input {
+  width: 100%;
+  padding: 0.8rem 0rem;
+  padding-left: 10rem;
+  border-radius: 2rem;
+  border: 2px solid rgb(229, 229, 229);
+  color: #292b2c;
+  font-weight: 400;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+body header .middle .header-search button {
+  padding: 0.6rem 1.8rem;
+  background-color: rgb(229, 229, 229);
+  border-radius: 4rem;
+  border: 0px none transparent !important;
+  position: absolute;
+  right: -3px;
+  bottom: 0;
+}
+body header .middle .compareWishBasket {
+  position: relative;
+}
+body header .middle .compareWishBasket .inner-box {
+  display: flex;
+  justify-content: center;
+}
+body header .middle .compareWishBasket .inner-box a {
+  border: 2px solid rgb(229, 229, 229);
+  padding: 10px;
+  border-radius: 100px;
+}
+body header .middle .compareWishBasket .price {
+  color: rgb(51, 51, 51);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+body header .middle .compareWishBasket .basketIcon #triangle {
+  position: absolute;
+  top: 90px;
+  left: 165px;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  color: rgb(229, 229, 229);
+}
+body header .middle .compareWishBasket .basketIcon .basket {
+  position: absolute;
+  top: 90px;
+  left: 0;
+  transition-duration: 0.3s;
+  background-color: white;
+  height: 350px;
+  width: 115%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 5;
+  padding: 20px 30px;
+}
+body header .middle .compareWishBasket .basketIcon .basket .checkOut .btn1 {
+  border-radius: 20px;
+  color: rgb(242, 139, 0);
+  border: 2px solid rgb(242, 139, 0);
+  background-color: white;
+  padding: 10px 20px;
+}
+body header .middle .compareWishBasket .basketIcon .basket .checkOut .btn1:hover {
+  background-color: rgb(242, 139, 0);
+  color: white;
+}
+body header .middle .compareWishBasket .basketIcon .basket .checkOut .btn2 {
+  border-radius: 20px;
+  color: white;
+  border: 2px solid rgb(72, 72, 72);
+  background-color: rgb(72, 72, 72);
+  padding: 10px 20px;
+}
+body header .middle .compareWishBasket .basketIcon .basket .checkOut .btn2:hover {
+  background-color: rgb(242, 139, 0);
+  color: white;
+  border-color: rgb(242, 139, 0);
+}
+body header .middle .compareWishBasket .basketIcon .basket .subTotal {
+  color: rgb(72, 72, 72);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+body header .middle .compareWishBasket .basketIcon .basket .subTotal .price {
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+body header .middle .compareWishBasket .basketIcon .basket .imgForBasket img {
+  width: 100%;
+}
+body header .middle .compareWishBasket .basketIcon .basket .name {
+  margin-bottom: 3px;
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+body header .middle .compareWishBasket .basketIcon .basket .name :hover {
+  color: rgb(242, 139, 0);
+}
+body header .middle .compareWishBasket .basketIcon .basket .price {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: rgb(242, 139, 0);
+}
+body header .middle .compareWishBasket .basketIcon .basket .closeX :hover {
+  color: rgb(242, 139, 0);
+}
+body header .middle .compareWishBasket .basketIcon:hover .basket {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+body header .middle .compareWishBasket .basketIcon:hover #triangle {
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+body header .bottom {
+  position: relative;
+  background-color: rgb(242, 139, 0);
+  color: white;
+  padding: 0px 0;
+}
+body header .bottom .todayDeals {
+  position: relative;
+}
+body header .bottom .todayDeals .underline {
+  position: absolute;
+  top: 20px;
+  right: 14px;
+  border: 1px solid white;
+  background-color: white;
+  transition-duration: 0.5s;
+  height: 1px;
+  width: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .todayDeals:hover .underline {
+  left: 85px;
+  width: 50%;
+  visibility: visible;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+body header .bottom .megaMenu {
+  position: absolute;
+  bottom: 0;
+  left: 90px;
+  background-color: rgb(72, 72, 72);
+  padding: 22px 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+body header .bottom .megaMenu .btnMega {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(254, 254, 254);
+}
+body header .bottom .megaMenu .btnMega i {
+  font-size: 21px;
+  padding-right: 20px;
+}
+body header .bottom .megaMenu .megaMenuList {
+  position: absolute;
+  top: 65px;
+  left: 0px;
+  width: 100%;
+  z-index: 2;
+  transition-duration: 0.7s;
+  visibility: hidden;
+  opacity: 0;
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList ul {
+  border: 1px solid rgb(101, 101, 101);
+}
+body header .bottom .megaMenu .megaMenuList ul :last-child {
+  border-bottom: 1px none transparent;
+}
+body header .bottom .megaMenu .megaMenuList ul li {
+  padding: 0.8rem 0rem;
+  border-bottom: 0.1px solid rgba(101, 101, 101, 0.2);
+}
+body header .bottom .megaMenu .megaMenuList ul li img {
+  margin-right: 18px;
+  margin-left: 20px;
+}
+body header .bottom .megaMenu .megaMenuList ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList ul li a i {
+  padding-left: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac .megaMenuListSubList .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .laptopMac:hover .megaMenuListSubList {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet .megaMenuListSubList2 .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .mobileAndTablet:hover .megaMenuListSubList2 {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices .megaMenuListSubList3 .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .homeDevices:hover .megaMenuListSubList3 {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys .megaMenuListSubList5 .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .gamesAndToys:hover .megaMenuListSubList5 {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories .megaMenuListSubList6 .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .Accessories:hover .megaMenuListSubList6 {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 {
+  width: 350%;
+  height: 100%;
+  margin-left: 22rem;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 2rem;
+  position: absolute;
+  transition-duration: 0.5s;
+  top: 0;
+  left: -150px;
+  z-index: 5;
+  visibility: hidden;
+  opacity: 0;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 h2 {
+  color: rgb(242, 139, 0);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul {
+  color: white;
+  border: 0 none transparent !important;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul li {
+  border-bottom: 0 none transparent !important;
+  padding: 0.4rem 0;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul li a:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul :last-child {
+  padding: 0;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 ul :last-child a {
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 .rightOnSubCategoryList h1 {
+  font-size: 17px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(242, 139, 0);
+  margin-bottom: 0.5rem;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 .rightOnSubCategoryList .boxForSubCategoryList {
+  background-color: rgb(229, 229, 229);
+  border: 3px solid rgb(229, 229, 229) !important;
+  padding: 1rem 0.2rem;
+  margin-bottom: 1.7rem;
+  border-radius: 10px;
+}
+body header .bottom .megaMenu .megaMenuList .Security .megaMenuListSubList7 .rightOnSubCategoryList .boxForSubCategoryList:hover {
+  background-color: white;
+}
+body header .bottom .megaMenu .megaMenuList .Security:hover .megaMenuListSubList7 {
+  visibility: visible;
+  opacity: 1;
+  left: -90px;
+}
+body header .bottom .megaMenu:hover .megaMenuList {
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNavCol {
+  position: relative;
+}
+body header .bottom .mainNav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu {
+  position: absolute;
+  top: 90px;
+  left: 80px;
+  width: 90%;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  z-index: 2;
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList {
+  transition-duration: 0.3s;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList :first-child {
+  color: rgb(242, 139, 0);
+  font-size: 17px;
+  padding-bottom: 8px;
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .electronicsOnMainNav .electronicsBigMenu .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+  color: rgb(242, 139, 0);
+  font-weight: 700;
+}
+body header .bottom .mainNav .electronicsOnMainNav .bottomOnElectronicsBigMenu {
+  margin-top: 1rem;
+}
+body header .bottom .mainNav .electronicsOnMainNav:hover .electronicsBigMenu {
+  top: 56px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .homeOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .homeOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .homeOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .homeOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav .featuresOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .featuresOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .featuresOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .featuresOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav .shopOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .shopOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .shopOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .shopOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav .pagesOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .pagesOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .pagesOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .pagesOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav .blogOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .blogOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .blogOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .blogOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav .contactOnMainNav {
+  position: relative;
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList {
+  position: absolute;
+  transition-duration: 0.3s;
+  top: 50px;
+  left: -22px;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList li:hover {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList li:hover a {
+  color: rgb(242, 139, 0);
+}
+body header .bottom .mainNav .contactOnMainNav .homeOnMainNavList :last-child {
+  margin-bottom: 0;
+}
+body header .bottom .mainNav .contactOnMainNav:hover .homeOnMainNavList {
+  top: 36px;
+  visibility: visible;
+  opacity: 1;
+}
+body header .bottom .mainNav .contactOnMainNav:hover #overlay {
+  display: block;
+}
+body header .bottom .mainNav li {
+  border-right: 1px solid rgba(254, 254, 254, 0.5);
+}
+body header .bottom .mainNav li a {
+  color: rgb(254, 254, 254);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  padding-right: 25px;
+  text-align: center;
+}
+body header .bottom .mainNav :last-child {
+  border-right: 1px none transparent;
+}
+body header .bottom .todayDeals a {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(254, 254, 254);
+  font-size: 14px;
+  font-weight: 600;
+}
+body header .bottomForMobileGeneral {
+  display: none;
+}
+body header .bottomForMobileGeneral .bottomForMobile {
+  background-color: rgb(242, 139, 0);
+  margin-top: 1.5rem;
+  padding: 0.5rem 0rem;
+}
+body header .bottomForMobileGeneral .bottomForMobile .leftOnBottomForMobile i {
+  border: 1px solid #292b2c;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #292b2c;
+}
+body header .bottomForMobileGeneral .bottomForMobile .rightOnBottomForMobile i {
+  border: 1px solid white;
+  padding: 8px;
+  border-radius: 5px;
+}
+body header .bottomForMobileGeneral .bottomForMobile .rightOnBottomForMobile span {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: 0.5rem;
+}
+body header .bottomForMobileGeneral .bottomForMobileList {
+  display: none;
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li .parentList {
+  padding: 15px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li a {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li ul {
+  display: none;
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li ul li .parentChildList {
+  padding: 15px !important;
+  margin: 0rem 52px 0 35px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li ul li ul {
+  display: none;
+}
+body header .bottomForMobileGeneral .bottomForMobileList ul li ul li ul li .parentChildList {
+  padding: 15px !important;
+  margin-left: 82px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight {
+  display: none;
+  background-color: rgb(51, 51, 51);
+  position: absolute;
+  width: 100%;
+  z-index: 155445;
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight ul li .parentList {
+  padding: 15px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight ul li a {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight ul li ul {
+  display: none;
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight ul li ul li {
+  padding: 15px 4rem !important;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.1);
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+body header .bottomForMobileGeneral .bottomForMobileListRight ul li ul li i {
+  padding-right: 1rem;
+}
+body main #mainSliderSection {
+  background-color: rgb(245, 245, 245);
+  padding: 30px 0px;
+}
+body main #mainSliderSection .slick-dots li button {
+  border: 1px solid rgb(101, 101, 101) !important;
+  background-color: white;
+  border-radius: 10rem;
+  text-align: center;
+}
+body main #mainSliderSection .slick-dots li button:hover {
+  border: 1px solid rgb(242, 139, 0) !important;
+}
+body main #mainSliderSection .mainSliderSection {
+  margin: 0rem 80.5px;
+  padding: 14px 12px;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider {
+  border-radius: 7px;
+  padding-top: 4rem;
+  background-color: white;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider {
+  padding: 4rem;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider p {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(145, 145, 145);
+  padding-bottom: 10px;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: rgb(242, 139, 0);
+  margin-right: 20px;
+  display: inline-block;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider span {
+  font-family: "Nunito", sans-serif;
+  font-size: 70px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: rgb(45, 45, 45);
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .buttonSection {
+  margin: 4rem 0rem 1.5rem;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .buttonSection .price {
+  background-color: rgb(242, 139, 0);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1rem 4rem;
+  margin-left: -15%;
+  color: white;
+  font-size: 35px;
+  font-weight: 700;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .buttonSection .shopNow {
+  margin-left: 20px;
+  color: rgb(45, 45, 45);
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px 2rem;
+  border-radius: 20px;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .buttonSection .shopNow i {
+  padding-left: 10px;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .buttonSection .shopNow:hover {
+  background-color: rgb(229, 229, 229);
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider .priceDiscount {
+  font-size: 18px;
+  color: rgb(145, 145, 145);
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .image {
+  position: relative;
+}
+body main #mainSliderSection .mainSliderSection .generalForSlider .image #backImage {
+  position: absolute;
+  top: 0;
+  right: 5rem;
+  z-index: 0;
+}
+body main #banner .bannnerGeneral {
+  padding: 2rem;
+}
+body main #banner .bannnerGeneral img {
+  width: 100%;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral {
+  margin-top: 1rem;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productTab {
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+  padding: 1.3rem 0rem;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productTab ul li a {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: rgba(145, 145, 145, 0.8);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox {
+  margin-top: 30px;
+  padding: 2rem 0rem;
+  border: 2px solid transparent;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box img {
+  transform-origin: center;
+  width: 100%;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box i {
+  color: rgb(229, 229, 229);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box i:hover {
+  color: rgb(51, 51, 51);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box #iconLeft {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  cursor: pointer;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box #iconRight {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .title {
+  position: relative;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .title span {
+  color: white;
+  padding: 0rem 6rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .title .text {
+  position: absolute;
+  top: 10px;
+  left: 37%;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .productDescription a {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList {
+  display: none;
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .top {
+  display: flex;
+  justify-content: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a span {
+  color: white;
+  padding-left: 1rem;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a img {
+  padding-right: 10px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a img {
+  padding-right: 10px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBox .imageAndTextBox:hover .onHoverBasketCompareWishList {
+  display: block;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBoxFeatured {
+  display: none;
+}
+body main #productBoxesNewArrivalFeaturedTopSelling .productBoxesNewArrivalFeaturedTopSellingGeneral .productBoxTopSelling {
+  display: none;
+}
+body main #OurProducts {
+  margin-top: 2rem;
+}
+body main #OurProducts .productTab {
+  border-bottom: 0.5px solid rgba(101, 101, 101, 0.3);
+  padding: 1.3rem 0rem;
+}
+body main #OurProducts .productTab ul li a {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: rgb(51, 51, 51);
+}
+body main #OurProducts .productBoxes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0rem;
+}
+body main #OurProducts .productBoxes .box {
+  border: 2px solid transparent;
+  margin-bottom: 20px;
+  padding: 10px 4px;
+  padding-bottom: 20px;
+}
+body main #OurProducts .productBoxes .box .imgPart img {
+  width: 80%;
+}
+body main #OurProducts .productBoxes .box .textPart .productTitle {
+  margin-bottom: 0.6rem;
+}
+body main #OurProducts .productBoxes .box .textPart .productTitle h2 {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+body main #OurProducts .productBoxes .box .textPart .productDescription {
+  margin-bottom: 1rem;
+}
+body main #OurProducts .productBoxes .box .textPart .productDescription a {
+  color: rgb(72, 72, 72);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #OurProducts .productBoxes .box .textPart .price {
+  margin-top: 2rem;
+}
+body main #OurProducts .productBoxes .box .textPart .price .discount {
+  color: rgb(197, 197, 197);
+  text-decoration: line-through;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+body main #OurProducts .productBoxes .box .textPart .price .sale {
+  color: rgb(242, 139, 0);
+  font-size: 21px;
+  font-family: "Nunito", sans-serif;
+  margin-top: 0.5rem;
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart {
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 0.3s;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: -10px;
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart img {
+  display: inline-block;
+  margin-right: 1rem;
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart a {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart button {
+  border: 1px solid rgb(249, 36, 0);
+  background-color: rgb(249, 36, 0);
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+body main #OurProducts .productBoxes .box .compareWishlistCart button:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #OurProducts .productBoxes .box:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #OurProducts .productBoxes .box:hover .compareWishlistCart {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0px;
+}
+body main #categories {
+  background-color: rgb(245, 245, 245);
+  padding: 3.7rem 0;
+}
+body main #categories .categoryGeneral {
+  background-color: white;
+  border-radius: 15px;
+}
+body main #categories .categoryGeneral .productTab {
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+  padding: 1.3rem 0rem;
+}
+body main #categories .categoryGeneral .productTab ul li button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: rgba(145, 145, 145, 0.8);
+  border: none;
+  background-color: white;
+}
+body main #categories .categoryGeneral .productPart {
+  padding: 0rem 1.5rem;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox {
+  margin: 30px 0;
+  transition-duration: 0.3s;
+  padding: 0.5rem 0rem;
+  border: 2px solid transparent;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox:hover {
+  border: 3px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 140px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .box img {
+  transform-origin: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .box i {
+  color: rgb(229, 229, 229);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .box i:hover {
+  color: rgb(51, 51, 51);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .title {
+  position: relative;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .title span {
+  color: white;
+  padding: 0rem 6rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .title .text {
+  position: absolute;
+  top: 10px;
+  left: 37%;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .productDescription a {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList {
+  display: none;
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .top {
+  display: flex;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .top a {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .top a:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .top a span {
+  color: white;
+  padding-left: 1rem;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight {
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .top {
+  display: flex;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .top a {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .top a:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .top a span {
+  color: white;
+  padding-left: 1rem;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .left a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .left a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .left a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .right a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .right a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox .onHoverBasketCompareWishListRight .bottom .right a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBox:hover .onHoverBasketCompareWishList {
+  display: block;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft {
+  margin: 30px 0;
+  transition-duration: 0.3s;
+  padding: 6rem;
+  border: 2px solid transparent;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft:hover {
+  border: 3px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .box img {
+  transform-origin: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .box i {
+  color: rgb(229, 229, 229);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .box i:hover {
+  color: rgb(51, 51, 51);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .title {
+  position: relative;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .title span {
+  color: white;
+  padding: 0rem 6rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .title .text {
+  position: absolute;
+  top: 10px;
+  left: 37%;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .productDescription a {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight {
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .top {
+  display: flex;
+  justify-content: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .top a {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 1rem 5rem;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .top a:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .top a span {
+  color: white;
+  padding-left: 1rem;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .left a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .left a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .left a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .right a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .right a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft .onHoverBasketCompareWishListRight .bottom .right a img {
+  padding-right: 10px;
+}
+body main #categories .categoryGeneral .productPart .imageAndTextBoxLeft:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #specialOffer .specialOffer {
+  padding: 3rem 0rem;
+}
+body main #specialOffer .specialOffer .LEFT {
+  margin-top: 1rem;
+}
+body main #specialOffer .specialOffer .LEFT .top {
+  position: relative;
+}
+body main #specialOffer .specialOffer .LEFT .top .icons {
+  position: absolute;
+  top: 70%;
+  left: 0rem;
+  color: #292b2c;
+  z-index: 2;
+}
+body main #specialOffer .specialOffer .LEFT .top .icons i {
+  margin-right: 1rem;
+}
+body main #specialOffer .specialOffer .LEFT .top p {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(45, 45, 45);
+  background-color: rgb(245, 245, 245);
+  padding: 1.5rem 0rem;
+  padding-left: 2.3rem;
+  padding-right: 1rem;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  margin-top: 3rem;
+}
+body main #specialOffer .specialOffer .LEFT .ph {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+  margin-top: 4rem;
+  line-height: 25px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown {
+  margin-top: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS {
+  margin-right: 40px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .DAY {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Hour {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Min {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Sec {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .DAY2 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Hour2 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Min2 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Sec2 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .DAY3 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Hour3 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Min3 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS .Sec3 {
+  background-color: white;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 15px;
+  width: 100%;
+  border-radius: 50px;
+}
+body main #specialOffer .specialOffer .LEFT .countDown .DAYS span {
+  display: inline-block;
+  padding-top: 10px;
+  color: rgb(242, 139, 0);
+}
+body main #specialOffer .specialOffer .RIGHT {
+  margin: 1rem 0rem;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  position: relative;
+  padding: 3rem 0rem;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .save {
+  position: absolute;
+  top: 9%;
+  left: 0;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .save p {
+  background-color: #f28b00;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: white;
+  padding: 1.5rem 0rem;
+  padding-left: 1rem;
+  padding-right: 2.3rem;
+  border: 1px solid rgb(242, 139, 0);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral a img {
+  width: 100%;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .productName a {
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .productInfo {
+  margin: 20px 0;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+  line-height: 30px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .price {
+  margin-bottom: 20px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .price .discount {
+  font-size: 25px;
+  color: rgb(242, 139, 0);
+  font-family: "Nunito", sans-serif;
+  padding-right: 10px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .price .sale {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(197, 197, 197);
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .button {
+  margin-bottom: 30px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .button button {
+  border: 1px solid rgb(249, 36, 0);
+  background-color: rgb(249, 36, 0);
+  color: white;
+  border-radius: 30px;
+  padding: 14px 70px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .button button:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .button button img {
+  padding-right: 10px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .compareWishlist .compare {
+  margin-right: 20px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .compareWishlist img {
+  margin-right: 10px;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .compareWishlist span {
+  color: rgb(145, 145, 145);
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+}
+body main #specialOffer .specialOffer .RIGHT .rightGeneral .compareWishlist span:hover {
+  color: rgb(242, 139, 0);
+}
+body main #mostViewed {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+body main #mostViewed .productTab {
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+  padding: 1.3rem 0rem;
+}
+body main #mostViewed .productTab ul li a {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: rgb(45, 45, 45);
+}
+body main #mostViewed .productBox .imageAndTextBox {
+  margin: 0rem 10px;
+  margin-top: 30px;
+  padding: 1rem 0rem;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+body main #mostViewed .productBox .imageAndTextBox img {
+  width: 100%;
+  height: 10% !important;
+}
+body main #mostViewed .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(242, 139, 0);
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .title .text {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: start;
+  padding: 0rem 1rem;
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .productDescription a {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+  transition-duration: 0.3s;
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .productDescription a:hover {
+  color: #f28b00;
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+body main #mostViewed .productBox .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+body main #highlights {
+  background-color: rgb(245, 245, 245);
+  padding: 2rem 0rem;
+}
+body main #highlights .heading {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  margin-bottom: 40px;
+}
+body main #highlights .heading h3 {
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+body main #highlights .box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+body main #highlights .box img {
+  width: 100%;
+  border-radius: 10px;
+}
+body main #highlights .box a {
+  font-size: 13px;
+  color: rgb(51, 51, 51);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+body main #highlights .box a:hover {
+  color: rgb(242, 139, 0);
+}
+body main #highlights .box .starts {
+  margin: 10px 0;
+}
+body main #highlights .box .starts i {
+  font-size: 10px;
+  color: rgb(242, 139, 0);
+}
+body main #highlights .box .discount {
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+  display: inline-block;
+}
+body main #highlights .box .sale {
+  color: rgb(197, 197, 197);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+}
+body main #services {
+  padding: 2rem;
+}
+body main #services img {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 40px;
+  padding: 15px;
+}
+body main #services img:hover {
+  border-color: rgb(242, 139, 0);
+}
+body main #services h3 {
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+  margin-top: 32px;
+}
+body main #services p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+body footer {
+  overflow: hidden;
+}
+body footer .top {
+  padding: 2.5rem 0rem;
+  border-top: 1px solid rgba(101, 101, 101, 0.3);
+}
+body footer .top .mobileApp li {
+  margin-right: 20px;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 8px;
+  padding-right: 45px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+body footer .top .mobileApp li:hover {
+  border-color: rgb(242, 139, 0);
+}
+body footer .top .mobileApp img {
+  margin-right: 1rem;
+  margin-bottom: 0;
+}
+body footer .top .mobileApp .text {
+  color: rgb(101, 101, 101);
+}
+body footer .top .mobileApp .text h4 {
+  margin-bottom: 5px;
+}
+body footer .top .mobileApp .text p {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  margin-bottom: 0;
+}
+body footer .top .input {
+  position: relative;
+  margin-bottom: 30px;
+}
+body footer .top .input input {
+  width: 100%;
+  border-radius: 30px;
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 1rem 0rem;
+  padding-left: 20px;
+}
+body footer .top .input input:focus {
+  outline: none;
+  border: 2px solid rgb(229, 229, 229);
+}
+body footer .top .input img {
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+body footer .top .bottomForPay {
+  display: flex;
+  flex-wrap: nowrap;
+}
+body footer .top .bottomForPay img {
+  width: 100%;
+}
+body footer .top h3 {
+  color: rgb(72, 72, 72);
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+body footer .top p {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+body footer .top li {
+  margin-bottom: 10px;
+}
+body footer .top li a {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+body footer .top li a:hover {
+  color: rgb(242, 139, 0);
+}
+body footer .top img {
+  margin-bottom: 2rem;
+}
+body footer .top .call .logo {
+  margin-right: 20px;
+}
+body footer .top .call .text {
+  margin-bottom: 20px;
+}
+body footer .top .call .text p {
+  font-size: 14px;
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+body footer .top .call .text .phone {
+  font-size: 18px;
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+}
+body footer .top a {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+body footer .top a i {
+  color: rgb(213, 213, 213);
+}
+body footer .top a i:hover {
+  color: rgb(51, 51, 51);
+}
+body footer .bottom {
+  background-color: rgb(245, 245, 245);
+  padding: 1.5rem 0rem;
+}
+body footer .bottom p {
+  font-size: 13px;
+  color: rgb(72, 72, 72);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+
+.breadcrumbGeneral {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 1.2rem 0rem;
+  margin-bottom: 1rem;
+}
+.breadcrumbGeneral ul {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbGeneral ul li a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  font-size: 13px;
+  color: rgb(140, 140, 140);
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+.breadcrumbGeneral ul li a i {
+  margin: 0 20px;
+}
+.breadcrumbGeneral ul li:last-child {
+  color: #2d2d2d;
+  font-size: 13px;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  letter-spacing: 1px;
+}
+
+#shopMain #BestSeller .productTab {
+  position: relative;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain #BestSeller .productTab #dotsForBestSeller {
+  width: 100%;
+}
+#shopMain #BestSeller .productTab #dotsForBestSeller .slick-dots {
+  position: absolute;
+  top: 0;
+  right: -170px;
+}
+#shopMain #BestSeller .productTab #dotsForBestSeller .slick-dots li button {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+}
+#shopMain #BestSeller .productTab #dotsForBestSeller .slick-dots li button:hover {
+  border-color: rgb(242, 139, 0);
+}
+#shopMain #BestSeller .productBoxes {
+  overflow: hidden;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox {
+  margin: 0rem 10px;
+  margin-top: 30px;
+  padding: 1rem 0rem;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox img {
+  width: 100%;
+  height: 10% !important;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox:hover {
+  border: 2px solid rgb(242, 139, 0);
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .title .text {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: start;
+  padding: 0rem 1rem;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .productDescription a {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+  transition-duration: 0.3s;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .productDescription a:hover {
+  color: #f28b00;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+#shopMain #BestSeller .productBoxes .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+#shopMain .RIGHTonShop .categoryTab {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain .RIGHTonShop .categoryTab .category {
+  display: flex;
+  justify-content: space-between;
+}
+#shopMain .RIGHTonShop .categoryTab i {
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .categoryList {
+  transition-duration: 0.3s;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  z-index: 10;
+  display: block;
+}
+#shopMain .RIGHTonShop .categoryList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 0px;
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+#shopMain .RIGHTonShop .categoryList li span {
+  font-size: 12px;
+  color: rgb(186, 186, 186);
+  font-weight: 400;
+  margin-left: 10px;
+}
+#shopMain .RIGHTonShop .categoryList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+#shopMain .RIGHTonShop .categoryList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+#shopMain .RIGHTonShop .categoryList li:hover {
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .categoryList li:hover a {
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .categoryList :last-child {
+  margin-bottom: 0;
+}
+#shopMain .RIGHTonShop .price {
+  margin-top: 10px;
+}
+#shopMain .RIGHTonShop .price i {
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral {
+  display: block;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral span {
+  margin-top: 20px;
+  display: inline-block;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .range_container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 15% auto;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .range {
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .sliders_control {
+  position: relative;
+  min-height: 50px;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .form_control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(242, 139, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgb(242, 139, 0);
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 24px;
+  height: 24px;
+  background-color: rgb(242, 139, 0);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #C6C6C6;
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=range]::-webkit-slider-thumb:hover {
+  background: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=range]::-webkit-slider-thumb:active {
+  box-shadow: inset 0 0 3px rgb(242, 139, 0), 0 0 9px rgb(242, 139, 0);
+  -webkit-box-shadow: inset 0 0 3px rgb(242, 139, 0), 0 0 9px rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=number] {
+  color: #8a8383;
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  border: none;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=number]::-webkit-inner-spin-button,
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .form_control {
+  margin-top: -30px;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range .form_control span {
+  margin-left: -15px;
+  font-size: 15px;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range #fromSlider {
+  height: 0;
+  z-index: 1;
+}
+#shopMain .RIGHTonShop .price .rangeGeneral .range input {
+  border: none;
+  width: 20%;
+  font-size: 12px;
+}
+#shopMain .RIGHTonShop .price .priceTab {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain .RIGHTonShop .price .priceTab .price {
+  display: flex;
+  justify-content: space-between;
+}
+#shopMain .RIGHTonShop .brands {
+  margin-top: 20px;
+  display: block;
+}
+#shopMain .RIGHTonShop .brands i {
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .brands .brandTab {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain .RIGHTonShop .brands .brandTab .brand {
+  display: flex;
+  justify-content: space-between;
+}
+#shopMain .RIGHTonShop .brands .brandSearch {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .brands .brandSearch .search input {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+}
+#shopMain .RIGHTonShop .brands .brandSearch .search input:focus {
+  outline: 1px none transparent;
+  border: 1px solid rgb(229, 229, 229);
+}
+#shopMain .RIGHTonShop .brands .brandSearch .context {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .brands .brandSearch .context .box {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .brands .brandSearch .context .box span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+#shopMain .RIGHTonShop .brands .brandSearch .context .box span span {
+  color: rgb(186, 186, 186);
+  margin-left: 5px;
+}
+#shopMain .RIGHTonShop .brands .brandSearch .context input {
+  width: 50px;
+}
+#shopMain .RIGHTonShop .colors {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#shopMain .RIGHTonShop .colors i {
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .colors .colorTab {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain .RIGHTonShop .colors .colorTab .color {
+  display: flex;
+  justify-content: space-between;
+}
+#shopMain .RIGHTonShop .colors .colorSearch {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .colors .colorSearch .search input {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  width: 100%;
+}
+#shopMain .RIGHTonShop .colors .colorSearch .search input:focus {
+  outline: 1px none transparent;
+  border: 1px solid rgb(229, 229, 229);
+}
+#shopMain .RIGHTonShop .colors .colorSearch .context {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .colors .colorSearch .context .box {
+  margin-top: 30px;
+}
+#shopMain .RIGHTonShop .colors .colorSearch .context .box span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+#shopMain .RIGHTonShop .colors .colorSearch .context .box span span {
+  color: rgb(186, 186, 186);
+  margin-left: 5px;
+}
+#shopMain .RIGHTonShop .colors .colorSearch .context input {
+  width: 50px;
+}
+#shopMain .RIGHTonShop .bestseller {
+  display: block;
+}
+#shopMain .RIGHTonShop .bestseller i {
+  cursor: pointer;
+}
+#shopMain .RIGHTonShop .bestseller .bestsellerTab {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain .RIGHTonShop .bestseller .bestsellerTab .bestseller {
+  display: flex;
+  justify-content: space-between;
+}
+#shopMain .RIGHTonShop .bestseller .basket {
+  transition-duration: 0.3s;
+  background-color: white;
+  height: 350px;
+  width: 115%;
+  z-index: 5;
+  padding: 20px 30px;
+}
+#shopMain .RIGHTonShop .bestseller .basket .stars {
+  font-size: 10px;
+  margin-top: 10px;
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .bestseller .basket .stars i {
+  margin-right: 5px;
+}
+#shopMain .RIGHTonShop .bestseller .basket .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopMain .RIGHTonShop .bestseller .basket .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#shopMain .RIGHTonShop .bestseller .basket .priceSection .sale {
+  margin-left: 5px;
+}
+#shopMain .RIGHTonShop .bestseller .basket .priceSection .sale del {
+  font-size: 11px;
+  color: rgb(197, 197, 197);
+}
+#shopMain .RIGHTonShop .bestseller .basket .imgForBasket img {
+  width: 100%;
+}
+#shopMain .RIGHTonShop .bestseller .basket .name {
+  margin-bottom: 3px;
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+#shopMain .RIGHTonShop .bestseller .basket .name :hover {
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .bestseller .basket .price {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .bestseller .basket .closeX :hover {
+  color: rgb(242, 139, 0);
+}
+#shopMain .RIGHTonShop .banner {
+  margin-bottom: 6rem;
+  margin-top: 20px;
+}
+#shopMain #SortProduct .productTab {
+  position: relative;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#shopMain #SortProduct .productTab span {
+  font-size: 13px;
+  color: rgb(101, 101, 101);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#shopMain #SortProduct .menuproductTab {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#shopMain #SortProduct .menuproductTab img {
+  margin-right: 10px;
+}
+#shopMain #SortProduct .menuproductTab .popularity {
+  margin-right: 30px;
+}
+#shopMain #SortProduct .menuproductTab .popularity select {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+  font-size: 13px;
+  color: rgb(114, 114, 114);
+  padding: 5px;
+}
+#shopMain #SortProduct .menuproductTab .popularity select:focus {
+  border: 1px solid rgb(229, 229, 229);
+  outline: 1px solid rgb(229, 229, 229);
+}
+#shopMain #SortProduct .menuproductTab .Show select {
+  padding: 5px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+  font-size: 13px;
+  color: rgb(114, 114, 114);
+}
+#shopMain #SortProduct .menuproductTab .Show select:focus {
+  border: 1px solid rgb(229, 229, 229);
+  outline: 1px solid rgb(229, 229, 229);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox {
+  margin-top: 10px;
+  padding: 2rem 0rem;
+  border: 2px solid transparent;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box img {
+  transform-origin: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box i {
+  color: rgb(229, 229, 229);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box i:hover {
+  color: rgb(51, 51, 51);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box #iconLeft {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  cursor: pointer;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .productBoxesSectionSliderForSingleProduct1 .box #iconRight {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  cursor: pointer;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .title {
+  position: relative;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .title span {
+  color: white;
+  padding: 0rem 6rem;
+  border-bottom: 1px solid rgba(145, 145, 145, 0.5);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .title .text {
+  position: absolute;
+  top: 10px;
+  left: 37%;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .productDescription a {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList {
+  display: none;
+  padding: 1rem;
+  transition-duration: 0.3s;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .top {
+  display: flex;
+  justify-content: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .top a span {
+  color: white;
+  padding-left: 1rem;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  font-weight: 600;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a img {
+  padding-right: 10px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .left a:hover {
+  color: rgb(242, 139, 0);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a {
+  color: rgb(145, 145, 145);
+  display: flex;
+  align-items: center;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a:hover {
+  color: rgb(242, 139, 0);
+}
+#shopMain #SortProduct .productBox .imageAndTextBox .onHoverBasketCompareWishList .bottom .right a img {
+  padding-right: 10px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+#shopMain #SortProduct .productBox .imageAndTextBox:hover .onHoverBasketCompareWishList {
+  display: block;
+}
+#shopMain #PrevNext {
+  margin: 20px 0 80px;
+}
+#shopMain #PrevNext .blog-pagination {
+  border-top: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 30px 0;
+}
+#shopMain #PrevNext .blog-pagination span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+#shopMain #PrevNext .blog-pagination ul li {
+  font-size: 13px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+#shopMain #PrevNext .blog-pagination ul li:hover {
+  color: #f28b00;
+}
+#shopMain #PrevNext .blog-pagination ul li i {
+  margin: 0rem 10px;
+}
+#shopMain #PrevNext .blog-pagination ul li a {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+  padding: 10px;
+}
+#shopMain #PrevNext .blog-pagination ul li a:hover {
+  background-color: #f28b00;
+  color: white;
+}
+
+#cartMain .generalCart {
+  margin-bottom: 40px;
+}
+#cartMain .generalCart .leftCart {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+}
+#cartMain .generalCart .leftCart h3 {
+  margin-bottom: 40px;
+}
+#cartMain .generalCart .leftCart table {
+  width: 100%;
+}
+#cartMain .generalCart .leftCart table thead {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#cartMain .generalCart .leftCart table thead tr {
+  display: flex;
+  justify-content: space-between;
+}
+#cartMain .generalCart .leftCart table thead tr th {
+  font-size: 14px;
+  color: rgb(72, 72, 72);
+  font-family: "Nunito", sans-serif;
+  padding-bottom: 15px;
+}
+#cartMain .generalCart .leftCart table thead tr :first-child {
+  width: 60%;
+}
+#cartMain .generalCart .leftCart table tbody tr {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+#cartMain .generalCart .leftCart table tbody tr #inputForCount {
+  width: 30%;
+}
+#cartMain .generalCart .leftCart table tbody tr td {
+  display: flex;
+  align-items: center;
+}
+#cartMain .generalCart .leftCart table tbody tr td .inputForCount {
+  margin-right: 10px;
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+}
+#cartMain .generalCart .leftCart table tbody tr td .inputForCount i {
+  padding: 0rem 0.8rem;
+}
+#cartMain .generalCart .leftCart table tbody tr td .totalPrice {
+  font-size: 20px;
+  color: rgb(242, 139, 0);
+  margin-right: 30px;
+}
+#cartMain .generalCart .leftCart table tbody tr td .trash {
+  cursor: pointer;
+  margin-left: 10px;
+}
+#cartMain .generalCart .leftCart table tbody tr td img {
+  width: 40%;
+}
+#cartMain .generalCart .leftCart table tbody tr td .name {
+  margin-right: 30px;
+}
+#cartMain .generalCart .leftCart table tbody tr td .name p {
+  font-size: 15px;
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+}
+#cartMain .generalCart .leftCart table tbody tr td .price p {
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  color: rgb(152, 152, 152);
+}
+#cartMain .generalCart .leftCart table tbody .image {
+  width: 35%;
+}
+#cartMain .generalCart .leftCart .coupon {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border: 1px dashed rgb(229, 229, 229);
+  padding: 80px;
+}
+#cartMain .generalCart .leftCart .coupon input {
+  border-radius: 20px;
+  font-size: 13px;
+  padding-left: 15px;
+  border: 1px solid rgb(229, 229, 229);
+  margin-right: 20px;
+  width: 50%;
+}
+#cartMain .generalCart .leftCart .coupon input:focus {
+  border: 1px solid rgb(229, 229, 229);
+  outline: 1px solid rgb(229, 229, 229);
+}
+#cartMain .generalCart .leftCart .coupon button {
+  background-color: rgb(45, 45, 45);
+  border-radius: 20px;
+  border: 1px solid rgb(45, 45, 45);
+  color: white;
+  font-size: 13px;
+  padding: 10px;
+}
+#cartMain .generalCart .leftCart .coupon button:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+#cartMain .generalCart .rightCart {
+  background-color: rgb(245, 245, 245);
+  padding: 35px;
+  border-radius: 7px;
+}
+#cartMain .generalCart .rightCart h3 {
+  margin-bottom: 26px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 700;
+}
+#cartMain .generalCart .rightCart p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(45, 45, 45);
+}
+#cartMain .generalCart .rightCart .subtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+#cartMain .generalCart .rightCart .subtotal .subtotalPrice {
+  font-size: 19px;
+  color: rgb(140, 140, 140);
+  font-family: "Nunito", sans-serif;
+}
+#cartMain .generalCart .rightCart .shipping {
+  display: flex;
+  justify-content: space-between;
+}
+#cartMain .generalCart .rightCart .shipping .rightPartForShipping .flatRate {
+  margin-bottom: 10px;
+}
+#cartMain .generalCart .rightCart .shipping .rightPartForShipping .free {
+  margin-bottom: 10px;
+}
+#cartMain .generalCart .rightCart .shipping .rightPartForShipping .calculateShipping {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+#cartMain .generalCart .rightCart .shipping .rightPartForShipping span {
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+}
+#cartMain .generalCart .rightCart .shipping .rightPartForShipping span span {
+  font-weight: 700;
+}
+#cartMain .generalCart .rightCart .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#cartMain .generalCart .rightCart .total .totalPrice {
+  font-size: 24px;
+  color: rgb(242, 139, 0);
+}
+#cartMain .generalCart .rightCart .buttons {
+  margin-top: 100px;
+}
+#cartMain .generalCart .rightCart .buttons button {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  color: white;
+  margin-top: 1.2rem;
+}
+#cartMain .generalCart .rightCart .buttons #firstBtn {
+  background-color: rgb(173, 173, 173);
+  border: 1px solid rgb(173, 173, 173);
+}
+#cartMain .generalCart .rightCart .buttons #firstBtn:hover {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(45, 45, 45);
+}
+#cartMain .generalCart .rightCart .buttons #ProceedToCheckout {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+}
+#cartMain .generalCart .rightCart .buttons #ProceedToCheckout:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+#cartMain #servicesCart {
+  margin-bottom: 40px;
+}
+#cartMain #servicesCart .boox {
+  border: 1px solid rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 10px;
+}
+#cartMain #servicesCart img {
+  margin-right: 20px;
+}
+#cartMain #servicesCart h3 {
+  width: 100%;
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#cartMain #servicesCart p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#checkoutMain #servicesCart {
+  margin-bottom: 40px;
+}
+#checkoutMain #servicesCart .boox {
+  border: 1px solid rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100px;
+  padding: 1rem 1.2rem;
+}
+#checkoutMain #servicesCart img {
+  margin-right: 20px;
+}
+#checkoutMain #servicesCart h3 {
+  width: 100%;
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#checkoutMain #servicesCart p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#checkoutMain .checkoutGeneral {
+  margin-top: 20px;
+}
+#checkoutMain .checkoutGeneral h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(45, 45, 45);
+}
+#checkoutMain .checkoutGeneral .checkoutLogin {
+  border: 2px dashed rgb(229, 229, 229);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  padding: 1rem 0;
+  padding-left: 15px;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .checkoutLogin a {
+  color: rgb(242, 139, 0);
+}
+#checkoutMain .checkoutGeneral .billingDetail {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .billingDetail h3 {
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding-bottom: 10px;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .left {
+  width: 45%;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .left .label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .left input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .left input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .right {
+  width: 45%;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .right .label {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .right input {
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 20px;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#checkoutMain .checkoutGeneral .billingDetail .billingDetails .right input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#checkoutMain .checkoutGeneral .companyName {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#checkoutMain .checkoutGeneral .companyName p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .companyName input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#checkoutMain .checkoutGeneral .companyName input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#checkoutMain .checkoutGeneral .country {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#checkoutMain .checkoutGeneral .country p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .country input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#checkoutMain .checkoutGeneral .country input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#checkoutMain .checkoutGeneral .createAnAccount {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .contact {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+#checkoutMain .checkoutGeneral .contact p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .contact input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#checkoutMain .checkoutGeneral .contact input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#checkoutMain .checkoutGeneral .contact .left {
+  width: 45%;
+}
+#checkoutMain .checkoutGeneral .contact .right {
+  width: 45%;
+}
+#checkoutMain .checkoutGeneral .shippingAddress {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#checkoutMain .checkoutGeneral .shippingAddress h3 {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding-bottom: 1rem;
+}
+#checkoutMain .checkoutGeneral .shippingAddress .createAnAccount {
+  margin-top: 30px;
+}
+#checkoutMain .checkoutGeneral .order {
+  margin-bottom: 50px;
+}
+#checkoutMain .checkoutGeneral .order p {
+  margin-bottom: 10px;
+}
+#checkoutMain .checkoutGeneral .order textarea {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 8px;
+  padding: 1rem 0rem;
+  padding-left: 2rem;
+  width: 100%;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(114, 114, 114);
+}
+#checkoutMain .checkoutGeneral .rightCart {
+  background-color: rgb(245, 245, 245);
+  padding: 35px;
+  border-radius: 7px;
+}
+#checkoutMain .checkoutGeneral .rightCart h3 {
+  margin-bottom: 26px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 700;
+}
+#checkoutMain .checkoutGeneral .rightCart p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(45, 45, 45);
+}
+#checkoutMain .checkoutGeneral .rightCart .productNameAndPrice {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#checkoutMain .checkoutGeneral .rightCart .productNameAndPrice .productName {
+  font-size: 14px;
+  color: rgb(140, 140, 140);
+  font-family: "Nunito", sans-serif;
+}
+#checkoutMain .checkoutGeneral .rightCart .productNameAndPrice .productPrice {
+  font-size: 14px;
+  color: rgb(140, 140, 140);
+  font-family: "Nunito", sans-serif;
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping .rightPartForShipping .flatRate {
+  margin-bottom: 10px;
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping .rightPartForShipping .free {
+  margin-bottom: 10px;
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping .rightPartForShipping .calculateShipping {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping .rightPartForShipping span {
+  font-size: 14px;
+  color: rgb(131, 131, 131);
+}
+#checkoutMain .checkoutGeneral .rightCart .shipping .rightPartForShipping span span {
+  font-weight: 700;
+}
+#checkoutMain .checkoutGeneral .rightCart .total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+#checkoutMain .checkoutGeneral .rightCart .total .totalPrice {
+  font-size: 24px;
+  color: rgb(242, 139, 0);
+}
+#checkoutMain .checkoutGeneral .rightCart .totalFirst {
+  display: flex;
+  justify-content: space-between;
+}
+#checkoutMain .checkoutGeneral .rightCart .totalFirst .totalPrice {
+  font-size: 24px;
+  color: rgb(131, 131, 131);
+}
+#checkoutMain .checkoutGeneral .rightCart .buttons {
+  margin-top: 50px;
+}
+#checkoutMain .checkoutGeneral .rightCart .buttons button {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  color: white;
+  margin-top: 1.2rem;
+}
+#checkoutMain .checkoutGeneral .rightCart .buttons #ProceedToCheckout {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  transition-duration: 0.5s;
+}
+#checkoutMain .checkoutGeneral .rightCart .buttons #ProceedToCheckout:hover {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(45, 45, 45);
+}
+#checkoutMain .checkoutGeneral .rightCart .checkPayment {
+  margin-top: 50px;
+  font-size: 14px;
+  color: rgb(45, 45, 45);
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .rightCart .checkPayment p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(131, 131, 131);
+  margin: 20px 0px;
+}
+#checkoutMain .checkoutGeneral .rightCart .checkPayment input {
+  margin-top: 10px;
+}
+#checkoutMain .checkoutGeneral .rightCart .readAndAccept {
+  margin-top: 50px;
+  font-size: 14px;
+  color: rgb(45, 45, 45);
+  font-family: "Open Sans", sans-serif;
+}
+#checkoutMain .checkoutGeneral .rightCart .readAndAccept input {
+  margin-right: 10px;
+}
+
+#aboutMain #firstSection {
+  margin-top: 70px;
+}
+#aboutMain #firstSection .Left {
+  position: relative;
+}
+#aboutMain #firstSection .Left img {
+  position: absolute;
+  top: -20px;
+  left: 30px;
+  border-radius: 10px;
+}
+#aboutMain #firstSection .Right {
+  padding: 5rem;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+#aboutMain #firstSection .Right .title h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(45, 45, 45);
+}
+#aboutMain #firstSection .Right .content p {
+  margin-top: 20px;
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  line-height: 24px;
+}
+#aboutMain #firstSection .Right .content p span {
+  color: #292b2c;
+}
+#aboutMain #second {
+  overflow: hidden;
+}
+#aboutMain #second .secondGeneral {
+  margin: 90px 0;
+  display: flex;
+  justify-content: space-between;
+}
+#aboutMain #second img {
+  border-radius: 10px;
+}
+#aboutMain #second a {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(45, 45, 45);
+  margin: 1.5rem 0rem;
+  display: inline-block;
+}
+#aboutMain #second p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+  line-height: 24px;
+}
+#aboutMain #ourTeam h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  margin-bottom: 20px;
+}
+#aboutMain .slick-dots li button {
+  border: 1px solid rgb(101, 101, 101) !important;
+  background-color: white;
+  border-radius: 10rem;
+  text-align: center;
+}
+#aboutMain .slick-dots li button:hover {
+  border: 1px solid rgb(242, 139, 0) !important;
+}
+#aboutMain .mainSliderSectionAbout {
+  margin-bottom: 50px;
+}
+#aboutMain .mainSliderSectionAbout .generalForSlider {
+  border-radius: 7px;
+  background-color: white;
+  margin: 0rem 0.5rem;
+  margin-bottom: 30px;
+}
+#aboutMain .mainSliderSectionAbout .generalForSlider .text {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  margin-top: 10px;
+}
+#aboutMain .mainSliderSectionAbout .generalForSlider .text .text {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#aboutMain .mainSliderSectionAbout .generalForSlider .image img {
+  width: 100%;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+#aboutMain .mainSliderSectionAbout .generalForSlider .image img:hover {
+  border-color: rgb(242, 139, 0);
+}
+#aboutMain #Testimonial .testimonialGenera {
+  margin-bottom: 80px;
+}
+#aboutMain #Testimonial .testimonialGenera h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  margin: 60px 0;
+}
+#aboutMain #Testimonial .testimonialGeneral {
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  border: 1px solid rgb(229, 229, 229);
+  text-align: center;
+}
+#aboutMain #Testimonial .testimonialGeneral img {
+  display: inline-block;
+  border-radius: 80px;
+  z-index: 5;
+  margin-top: 20px;
+  border: 1px solid rgb(229, 229, 229);
+}
+#aboutMain #Testimonial .testimonialGeneral .name {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+  margin-bottom: 20px;
+}
+#aboutMain #Testimonial .testimonialGeneral p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+  margin: 20px 0;
+}
+
+#singleProductMain {
+  overflow: hidden;
+}
+#singleProductMain #singleProduct {
+  margin-top: 2rem;
+}
+#singleProductMain #singleProduct .product {
+  margin-left: 0;
+  margin-right: 0;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide {
+  width: 100% !important;
+  position: relative;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide .slider-for {
+  background-color: #fff;
+  margin-bottom: 30px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide .slider-for .product-1 img {
+  max-width: 100%;
+  width: 100%;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide .slider-nav .product-2 {
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  margin-right: 18px;
+  padding: 0.2rem;
+  width: 30%;
+  height: 80px;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide .slider-nav .product-2 img {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+}
+#singleProductMain #singleProduct .product .product-main .product-slide .slider-nav .product-2:hover {
+  border-color: #f28b00;
+  cursor: pointer;
+}
+#singleProductMain #singleProduct .rightCart {
+  background-color: rgb(245, 245, 245);
+  padding: 35px;
+  border-radius: 7px;
+}
+#singleProductMain #singleProduct .rightCart h3 {
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: 700;
+}
+#singleProductMain #singleProduct .rightCart .category {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+}
+#singleProductMain #singleProduct .rightCart .review .top .i {
+  margin-bottom: 12px;
+}
+#singleProductMain #singleProduct .rightCart .review .top .text {
+  display: flex;
+  align-items: center;
+}
+#singleProductMain #singleProduct .rightCart .review .top .text span {
+  color: rgb(131, 131, 131);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 10px;
+}
+#singleProductMain #singleProduct .rightCart .review .top .text p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+}
+#singleProductMain #singleProduct .rightCart .review .bottom p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  margin-right: 10px;
+}
+#singleProductMain #singleProduct .rightCart .review h3 {
+  background-color: rgb(249, 36, 0);
+  border-radius: 30px;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0.4rem 0.7rem;
+  margin-bottom: 0;
+}
+#singleProductMain #singleProduct .rightCart .review i {
+  color: #f28b00;
+  margin-right: 0.5rem;
+  font-size: 10px;
+}
+#singleProductMain #singleProduct .rightCart p {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(45, 45, 45);
+}
+#singleProductMain #singleProduct .rightCart .buttons {
+  margin-top: 100px;
+}
+#singleProductMain #singleProduct .rightCart .buttons button {
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 30px;
+  color: white;
+  margin-top: 1.2rem;
+}
+#singleProductMain #singleProduct .rightCart .buttons #firstBtn {
+  background-color: rgb(173, 173, 173);
+  border: 1px solid rgb(173, 173, 173);
+}
+#singleProductMain #singleProduct .rightCart .buttons #firstBtn:hover {
+  background-color: rgb(45, 45, 45);
+  border-color: rgb(45, 45, 45);
+}
+#singleProductMain #singleProduct .rightCart .buttons #ProceedToCheckout {
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+}
+#singleProductMain #singleProduct .rightCart .buttons #ProceedToCheckout:hover {
+  background-color: rgb(242, 139, 0);
+  border-color: rgb(242, 139, 0);
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  padding: 0.9rem 0px;
+  padding-right: 0;
+  border-radius: 30px;
+  transition-duration: 0.2s;
+  width: 45%;
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon button img {
+  margin-right: 10px;
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon button:hover {
+  background-color: rgb(72, 72, 72);
+  border-color: rgb(72, 72, 72);
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon .compare {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon .compare span {
+  margin-left: 6px;
+  color: rgb(145, 145, 145);
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon .wishlist {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+#singleProductMain #singleProduct .rightCart .addtoCatButtoon .wishlist span {
+  margin-left: 6px;
+  color: rgb(145, 145, 145);
+}
+#singleProductMain #singleProduct .rightCart .price {
+  margin-top: 30px;
+}
+#singleProductMain #singleProduct .rightCart .price .regular {
+  text-decoration: line-through;
+  color: rgb(197, 197, 197);
+}
+#singleProductMain #singleProduct .rightCart .price .sale {
+  font-size: 35px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(242, 139, 0);
+  margin-top: 10px;
+}
+#singleProductMain #singleProduct .rightCart .info-txt {
+  color: rgb(131, 131, 131);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 21px;
+  line-height: 20px;
+}
+#singleProductMain #singleProduct .rightCart .product-id {
+  margin-top: 20px;
+}
+#singleProductMain #singleProduct .rightCart .product-id span {
+  font-weight: 700;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#singleProductMain #singleProduct .rightCart .product-id span span {
+  color: rgb(131, 131, 131);
+  font-weight: 400;
+}
+#singleProductMain #singleProduct .rightCart .selectAndQuantity {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+#singleProductMain #singleProduct .rightCart .selectAndQuantity .quantity {
+  background-color: white;
+  padding: 1rem 2rem;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+#singleProductMain #singleProduct .rightCart .selectAndQuantity select {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: 1px none transparent;
+}
+#singleProductMain #singleProduct .rightCart .socialSingle {
+  margin-top: 4rem;
+}
+#singleProductMain #singleProduct .rightCart .socialSingle span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+}
+#singleProductMain #singleProduct .rightCart .socialSingle i {
+  color: rgb(213, 213, 213);
+  margin-left: 18px;
+}
+#singleProductMain #recentProduct {
+  margin: 5rem 0;
+}
+#singleProductMain #recentProduct .productTab {
+  border-bottom: 1px solid rgba(101, 101, 101, 0.3);
+  padding: 1.3rem 0rem;
+}
+#singleProductMain #recentProduct .productTab ul li a {
+  margin-right: 10px;
+  padding: 10px 0px;
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  color: rgb(45, 45, 45);
+}
+#singleProductMain #recentProduct .productBox {
+  padding: 0.1rem 0 1.5rem;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox {
+  margin: 0rem 10px;
+  margin-top: 30px;
+  padding: 1rem 0rem;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox img {
+  width: 100%;
+  height: 10% !important;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox:hover {
+  border: 2px solid rgb(242, 139, 0);
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .title .text {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  padding: 0rem 1rem;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .productDescription {
+  margin-top: 2rem;
+  text-align: start;
+  padding: 0rem 1rem;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .productDescription a {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+  line-height: 25px;
+  transition-duration: 0.3s;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .productDescription a:hover {
+  color: #f28b00;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .priceSection {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .priceSection .discount {
+  color: rgb(242, 139, 0);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 20px;
+}
+#singleProductMain #recentProduct .productBox .imageAndTextBox .textPart .priceSection .sale del {
+  color: rgb(197, 197, 197);
+}
+#singleProductMain #recentProduct .slick-dots li button {
+  border: 1px solid rgb(101, 101, 101) !important;
+  background-color: white;
+  border-radius: 10rem;
+  text-align: center;
+}
+#singleProductMain #recentProduct .slick-dots li button:hover {
+  border: 1px solid rgb(242, 139, 0) !important;
+}
+#singleProductMain .descriptionTechnicalSpecsReviews {
+  margin-top: 4rem;
+  padding: 2rem 0rem 0rem;
+}
+#singleProductMain .descriptionTechnicalSpecsReviews .single .active {
+  background-color: rgb(245, 245, 245);
+}
+#singleProductMain .descriptionTechnicalSpecsReviews .single p {
+  cursor: pointer;
+  width: 95%;
+  color: rgb(145, 145, 145);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  padding: 1rem 0;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+#singleProductMain .descriptionTechnicalSpecsReviews .single p:hover {
+  background-color: rgb(245, 245, 245);
+}
+#singleProductMain #Description {
+  display: block;
+  padding: 6rem 0rem;
+  background-color: rgb(245, 245, 245);
+}
+#singleProductMain #Description .bottom .rightText {
+  text-align: end;
+  margin-top: 7rem;
+}
+#singleProductMain #Description .bottom .imgOnLeft {
+  margin-top: 1rem;
+  width: 65%;
+}
+#singleProductMain #Description .bottom img {
+  width: 100%;
+}
+#singleProductMain #Description .bottom .imgOnLeftLine {
+  margin-left: 14rem;
+  margin-top: 8rem;
+  width: 50%;
+}
+#singleProductMain #Description .bottom .imgOnRightLine {
+  margin-top: 10rem;
+}
+#singleProductMain #Description h4 {
+  color: rgb(72, 72, 72);
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+#singleProductMain #Description p {
+  color: rgb(131, 131, 131);
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-bottom: 4rem;
+}
+#singleProductMain #Description .lastP {
+  margin-bottom: 0;
+}
+#singleProductMain #Description .top img {
+  margin-bottom: 2rem;
+}
+#singleProductMain #TechnicalSpecs {
+  display: none;
+  padding: 6rem 0rem;
+  background-color: rgb(245, 245, 245);
+}
+#singleProductMain #TechnicalSpecs h4 {
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  margin-bottom: 3rem;
+}
+#singleProductMain #TechnicalSpecs p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: rgb(72, 72, 72);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 1.2rem;
+}
+#singleProductMain #TechnicalSpecs p span {
+  color: rgb(101, 101, 101);
+  font-weight: 400;
+}
+#singleProductMain #TechnicalSpecs .lastP {
+  border-bottom: none;
+}
+#singleProductMain #Reviews {
+  display: none;
+  padding: 6rem 0rem;
+  background-color: rgb(245, 245, 245);
+}
+#singleProductMain #Reviews .bottomForReviews {
+  margin-top: 6rem;
+}
+#singleProductMain #Reviews .bottomForReviews .textPart {
+  margin-top: 30px;
+}
+#singleProductMain #Reviews .bottomForReviews .textPart .ph {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(131, 131, 131);
+  margin-top: 1rem;
+  line-height: 20px;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#singleProductMain #Reviews .bottomForReviews .textPart i {
+  color: rgb(242, 139, 0);
+  font-size: 10px;
+  margin-right: 0.3rem;
+}
+#singleProductMain #Reviews .bottomForReviews .textPart .name {
+  color: rgb(72, 72, 72);
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 5px;
+}
+#singleProductMain #Reviews .bottomForReviews .textPart .name span {
+  color: rgb(131, 131, 131);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#singleProductMain #Reviews .Right input {
+  margin-top: 15px;
+  display: block;
+  border-radius: 20px;
+  border: 1px none transparent;
+  padding: 0.7rem 0;
+  width: 60%;
+  padding-left: 30px;
+}
+#singleProductMain #Reviews .Right input:focus {
+  outline: 1px none transparent;
+  border: 1px none transparent;
+}
+#singleProductMain #Reviews .Right input::-moz-placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right input:-ms-input-placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right input::placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right textarea {
+  display: block;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  width: 100%;
+}
+#singleProductMain #Reviews .Right textarea:focus {
+  outline: 1px none transparent;
+  border: 1px solid transparent;
+}
+#singleProductMain #Reviews .Right textarea::-moz-placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right textarea:-ms-input-placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right textarea::placeholder {
+  color: rgb(114, 114, 114);
+}
+#singleProductMain #Reviews .Right .button {
+  margin-top: 20px;
+}
+#singleProductMain #Reviews .Right .button button {
+  padding: 20px;
+  background-color: rgb(249, 36, 0);
+  border: 1px solid rgb(249, 36, 0);
+  border-radius: 30px;
+  width: 40%;
+  color: white;
+}
+#singleProductMain #Reviews .Right .yourRating {
+  margin-top: 2rem;
+}
+#singleProductMain #Reviews .Right .yourRating span {
+  margin-right: 20px;
+  font-size: 13px;
+  color: rgb(131, 131, 131);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#singleProductMain #Reviews .Right .yourRating i {
+  font-size: 12px;
+  margin: 0.5rem 0;
+  color: #f28b00;
+  margin-right: 0.8rem;
+}
+#singleProductMain #Reviews .boxCommon {
+  display: flex;
+  align-items: center;
+}
+#singleProductMain #Reviews .boxCommon span {
+  margin-right: 10px;
+}
+#singleProductMain #Reviews .box {
+  width: 100%;
+  background-color: rgb(101, 101, 101);
+  border: 1px solid rgb(101, 101, 101);
+  margin: 0.8rem 0;
+}
+#singleProductMain #Reviews .fiveStar {
+  margin-top: 2rem;
+}
+#singleProductMain #Reviews .fiveStar .general {
+  align-items: center;
+}
+#singleProductMain #Reviews .fiveStar i {
+  font-size: 12px;
+  margin: 0.5rem 0;
+  color: #f28b00;
+  margin-right: 0.8rem;
+}
+#singleProductMain #Reviews .average-score {
+  margin-top: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+#singleProductMain #Reviews .average-score .left {
+  padding: 2rem 0;
+  background-color: white;
+  border-radius: 10px;
+}
+#singleProductMain #Reviews .average-score .left .num {
+  font-size: 30px;
+  color: rgb(72, 72, 72);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+#singleProductMain #Reviews .average-score .left .text {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+  margin-top: 15px;
+}
+#singleProductMain #Reviews .average-score .right i {
+  margin-right: 0.5rem;
+  color: #f28b00;
+}
+#singleProductMain #Reviews h4 {
+  color: rgb(53, 53, 53);
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#_404PageMain .general {
+  margin-top: 8rem !important;
+}
+#_404PageMain .general .form-search-error {
+  border-radius: 10px;
+  border: 1px dashed rgb(229, 229, 229);
+  width: 70%;
+  margin-top: 60px;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+#_404PageMain .general .form-search-error input {
+  width: 50%;
+  min-width: 80%;
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 30px;
+  margin-right: 20px;
+  padding: 0.5rem 1rem;
+  padding-left: 20px;
+}
+#_404PageMain .general .form-search-error input::-moz-placeholder {
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+}
+#_404PageMain .general .form-search-error input:-ms-input-placeholder {
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+}
+#_404PageMain .general .form-search-error input::placeholder {
+  color: rgb(114, 114, 114);
+  font-size: 13px;
+}
+#_404PageMain .general .form-search-error input:focus {
+  border: 1px none transparent;
+  outline: 2px solid rgb(229, 229, 229);
+}
+#_404PageMain .general .form-search-error button {
+  background-color: #292b2c;
+  border: 1px solid #292b2c;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  color: white;
+  width: 1005;
+}
+#_404PageMain .general h1 {
+  font-size: 30px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+#_404PageMain .general p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+  margin-top: 20px;
+}
+
+#_BrandMain {
+  background-color: rgb(245, 245, 245);
+}
+#_BrandMain h3 {
+  padding-top: 3rem;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  font-family: "Nunito", sans-serif;
+}
+#_BrandMain .brands-tablist {
+  margin-top: 30px;
+  background-color: white;
+  padding: 3rem 7rem;
+  width: 100%;
+  justify-content: space-between;
+  color: rgb(72, 72, 72);
+  font-size: 18px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+}
+#_BrandMain .brands-tablist div:hover {
+  color: rgb(242, 139, 0);
+  cursor: pointer;
+}
+#_BrandMain .brands {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#_BrandMain .brands .apple {
+  display: block;
+  margin-bottom: 25px;
+  background-color: white;
+  padding: 2.5rem 3rem;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+#_BrandMain .brands .apple:hover {
+  background-color: #f28b00;
+}
+#_BrandMain .brands .apple:hover .name {
+  color: white;
+}
+#_BrandMain .brands .apple:hover .productcountOnThisBrand {
+  color: white;
+}
+#_BrandMain .brands .apple .name {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  color: rgb(72, 72, 72);
+}
+#_BrandMain .brands .apple .productcountOnThisBrand {
+  text-align: center;
+  color: rgb(51, 51, 51);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+}
+
+#categoryMain .productTitle h2 {
+  margin-top: 10px;
+}
+#categoryMain #mainSliderSection {
+  background-color: white;
+  height: 100%;
+}
+#categoryMain #mainSliderSection .mainSliderSection {
+  border-radius: 8px;
+  margin: 0;
+  padding: 7px 0 20px;
+}
+#categoryMain #mainSliderSection .mainSliderSection .generalForSlider {
+  border-radius: 7px;
+  padding: 1rem 0;
+  background-color: rgb(245, 245, 245);
+}
+#categoryMain #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider {
+  padding: 0 4rem;
+  background-color: rgb(245, 245, 245);
+}
+#categoryMain #mainSliderSection .mainSliderSection .generalForSlider .leftForMainSlider h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 70px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  color: rgb(45, 45, 45);
+  margin-right: 20px;
+  display: inline-block;
+}
+#categoryMain #mainSliderSection .mainSliderSection .generalForSlider img {
+  margin-right: 40px;
+}
+#categoryMain #OurProducts {
+  margin-top: 0;
+}
+#categoryMain #OurProducts .ImageAndText img {
+  width: 100%;
+}
+#categoryMain #OurProducts .ImageAndText:hover {
+  border: 1px none transparent;
+}
+#categoryMain #highlights {
+  margin-bottom: 30px;
+}
+#categoryMain #highlights {
+  background-color: white;
+}
+#categoryMain #highlights .discount {
+  margin-top: 20px;
+}
+
+#contactMain .LeaveUsMessage {
+  margin-top: 60px;
+}
+#contactMain .LeaveUsMessage .firstP {
+  color: rgb(131, 131, 131);
+}
+#contactMain .LeaveUsMessage button {
+  background-color: rgb(249, 36, 0);
+  border-radius: 30px;
+  color: white;
+  width: 20%;
+  border: 1px solid rgb(249, 36, 0);
+  margin-left: 18%;
+  margin-top: 10px;
+  padding: 1rem;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 50px;
+  transition-duration: 0.3s;
+}
+#contactMain .LeaveUsMessage button:hover {
+  background-color: #2d2d2d;
+  border: 1px solid #2d2d2d;
+  border: 1px solid #2d2d2d;
+}
+#contactMain .LeaveUsMessage .contact {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+#contactMain .LeaveUsMessage .contact p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+}
+#contactMain .LeaveUsMessage .contact input {
+  width: 67%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#contactMain .LeaveUsMessage .contact input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#contactMain .LeaveUsMessage .right textarea {
+  margin-top: 15px;
+  width: 65%;
+  border-radius: 10px;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 20px;
+}
+#contactMain .LeaveUsMessage .right textarea:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 1px none transparent;
+}
+#contactMain .LeaveUsMessage .billingDetail {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  text-align: start;
+  justify-content: space-between;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .left {
+  margin-top: 10px;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .left .label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: rgb(101, 101, 101);
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .left input {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 20px;
+  padding-left: 1rem;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .left input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .right {
+  margin-top: 10px;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .right .label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: rgb(101, 101, 101);
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .right input {
+  width: 100%;
+  margin-top: 6px;
+  border-radius: 20px;
+  border: 2px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  font-size: 12px;
+}
+#contactMain .LeaveUsMessage .billingDetail .billingDetails .right input:focus {
+  outline: 2px solid rgb(229, 229, 229);
+  border: 2px solid rgb(229, 229, 229);
+}
+#contactMain .LeaveUsMessage .contact {
+  text-align: start;
+}
+#contactMain .LeaveUsMessage h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#contactMain .LeaveUsMessage p {
+  font-family: "Open Sans", sans-serif;
+  color: rgb(101, 101, 101);
+  font-size: 13px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+#contactMain .mapIframe {
+  border-radius: 10px;
+  margin-top: 15px;
+}
+#contactMain .mapIframe iframe {
+  width: 100% !important;
+}
+#contactMain .iconPart {
+  margin-top: 70px;
+}
+#contactMain .iconPart .box {
+  border: 2px solid rgb(229, 229, 229);
+  position: relative;
+  border-radius: 10px;
+  padding: 3rem 0rem 0;
+  margin-bottom: 30px;
+}
+#contactMain .iconPart .box .icon {
+  position: absolute;
+  top: -20%;
+  left: 40%;
+  border-radius: 150px;
+  height: 50px;
+  background-color: white;
+  padding: 8px;
+  border: 2px solid rgb(229, 229, 229);
+}
+#contactMain .iconPart .box .icon img {
+  width: 100%;
+}
+#contactMain .iconPart .box .heading {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+#contactMain .iconPart .box .ph {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  margin-top: 10px;
+  padding-bottom: 40px;
+  line-height: 20px;
+}
+
+#_faqMain .heading h3 {
+  font-size: 20px;
+  color: #2d2d2d;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  padding: 3rem 0;
+}
+#_faqMain .accordion {
+  margin-bottom: 4rem;
+}
+#_faqMain .accordion .accordion-item {
+  border: 1px none transparent;
+  margin-bottom: 1rem;
+}
+#_faqMain .accordion .accordion-item h2 {
+  border-radius: 30px;
+  border: 2px solid rgb(229, 229, 229) !important;
+}
+#_faqMain .accordion .accordion-body {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  line-height: 24px;
+}
+#_faqMain .accordion button {
+  border-radius: 30px;
+}
+
+#_storeLocationMain {
+  overflow: hidden;
+}
+#_storeLocationMain #services {
+  margin-top: 4rem;
+}
+#_storeLocationMain iframe {
+  width: 100%;
+}
+#_storeLocationMain .breadcrumbGeneral {
+  margin-bottom: 0;
+}
+#_storeLocationMain .left {
+  padding: 20px 10px;
+  background-color: rgb(245, 245, 245);
+}
+#_storeLocationMain .left ul {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+#_storeLocationMain .left ul li {
+  margin-top: 1.5rem;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(72, 72, 72);
+}
+#_storeLocationMain .left h3 {
+  color: rgb(45, 45, 45);
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  padding: 22px;
+  width: 100%;
+  font-size: 20px;
+}
+#_storeLocationMain .left .select {
+  align-items: center;
+  margin-top: 12px;
+}
+#_storeLocationMain .left .select select {
+  margin-left: 20px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 90px;
+  padding: 20px;
+}
+#_storeLocationMain .left .select select:focus {
+  outline: 1px solid white;
+}
+#_storeLocationMain .left .select .shareLocation {
+  background-color: rgb(249, 36, 0);
+  border-radius: 50px;
+}
+#_storeLocationMain .left .select .shareLocation a {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 0.7rem 0;
+  color: white;
+}
+#_storeLocationMain .left .select .shareLocation a img {
+  margin-right: 10px;
+}
+#_storeLocationMain .middle {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 0rem 2rem;
+}
+#_storeLocationMain .middle .address h3 {
+  margin-bottom: 12px;
+}
+#_storeLocationMain .middle h3 {
+  margin-top: 1.2rem;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+}
+#_storeLocationMain .middle p {
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#_storeLocationMain .middle img {
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#_orderTrackingMain .breadcrumbGeneral {
+  margin-bottom: 0;
+}
+#_orderTrackingMain .top {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+}
+#_orderTrackingMain #trackOrder {
+  margin-bottom: 3rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 120px 90px;
+}
+#_orderTrackingMain #trackOrder .heading {
+  text-align: center;
+}
+#_orderTrackingMain #trackOrder .heading h3 {
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#_orderTrackingMain #trackOrder .heading p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(145, 145, 145);
+}
+#_orderTrackingMain #trackOrder .inputs {
+  margin-top: 40px;
+}
+#_orderTrackingMain #trackOrder .inputs p {
+  color: rgb(101, 101, 101);
+  font-size: 13px;
+  font-family: "Nunito", sans-serif;
+}
+#_orderTrackingMain #trackOrder .inputs input {
+  margin-top: 15px;
+  border-radius: 40px;
+  border: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 100%;
+}
+#_orderTrackingMain #trackOrder .inputs input:focus {
+  border: 1px solid rgb(229, 229, 229);
+  outline: 1px solid rgb(229, 229, 229);
+}
+#_orderTrackingMain #trackOrder .inputs input::-moz-placeholder {
+  color: rgb(173, 173, 173);
+  font-size: 13px;
+}
+#_orderTrackingMain #trackOrder .inputs input:-ms-input-placeholder {
+  color: rgb(173, 173, 173);
+  font-size: 13px;
+}
+#_orderTrackingMain #trackOrder .inputs input::placeholder {
+  color: rgb(173, 173, 173);
+  font-size: 13px;
+}
+#_orderTrackingMain #servicesCart {
+  margin-bottom: 40px;
+}
+#_orderTrackingMain #servicesCart .boox {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+  padding: 1rem 1.2rem;
+  background-color: white;
+  cursor: default;
+}
+#_orderTrackingMain #servicesCart .boox:hover {
+  border-color: #f28b00;
+}
+#_orderTrackingMain #servicesCart img {
+  margin-right: 20px;
+}
+#_orderTrackingMain #servicesCart h3 {
+  width: 100%;
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#_orderTrackingMain #servicesCart p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+#_orderTrackingMain .trackButton {
+  text-align: center;
+  margin-top: 3rem;
+}
+#_orderTrackingMain .trackButton button {
+  background-color: rgb(249, 36, 0);
+  border-radius: 30px;
+  border: 1px solid rgb(249, 36, 0);
+  color: white;
+  width: 20%;
+  padding: 0.8rem 0;
+  transition-duration: 0.3s;
+}
+#_orderTrackingMain .trackButton button:hover {
+  background-color: #2d2d2d;
+  border-color: #2d2d2d;
+}
+
+#termsMain .box {
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+#termsMain .box h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#termsMain .box p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(145, 145, 145);
+}
+
+#blogMain .blog img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+#blogMain .blog h3 {
+  margin: 20px 0;
+}
+#blogMain .blog h3 a {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+}
+#blogMain .blog ul li {
+  margin-right: 20px;
+}
+#blogMain .blog ul li a {
+  font-size: 14px;
+  color: rgb(249, 36, 0);
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+}
+#blogMain .blog p {
+  font-size: 13px;
+  color: rgb(145, 145, 145);
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  margin-top: 20px;
+}
+#blogMain .blog button {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 80px;
+  background-color: #fff;
+  margin: 30px 0;
+  width: 25%;
+  padding: 1rem 0;
+}
+#blogMain .blog button:hover {
+  background-color: #f28b00;
+  color: white;
+}
+#blogMain #PrevNext {
+  margin: 20px 0 80px;
+}
+#blogMain #PrevNext .blog-pagination {
+  border-top: 1px solid rgb(229, 229, 229);
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 30px 0;
+}
+#blogMain #PrevNext .blog-pagination span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(101, 101, 101);
+}
+#blogMain #PrevNext .blog-pagination ul li {
+  font-size: 13px;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+#blogMain #PrevNext .blog-pagination ul li:hover {
+  color: #f28b00;
+}
+#blogMain #PrevNext .blog-pagination ul li i {
+  margin: 0rem 10px;
+}
+#blogMain #PrevNext .blog-pagination ul li a {
+  border: 1px solid rgb(229, 229, 229);
+  border-radius: 20px;
+  padding: 10px;
+}
+#blogMain #PrevNext .blog-pagination ul li a:hover {
+  background-color: #f28b00;
+  color: white;
+}
+#blogMain .right {
+  margin-top: 20px;
+}
+#blogMain .right #highlights {
+  background-color: white;
+}
+#blogMain .right #highlights h3 {
+  font-size: 20px;
+}
+#blogMain .right input {
+  background-color: rgb(245, 245, 245);
+  border-radius: 50px;
+  border: 1px solid rgb(245, 245, 245);
+  padding: 0.5rem 0;
+  width: 100%;
+  padding-left: 18px;
+}
+#blogMain .right input::-moz-placeholder {
+  text-transform: capitalize;
+  color: rgba(114, 114, 114, 0.5);
+}
+#blogMain .right input:-ms-input-placeholder {
+  text-transform: capitalize;
+  color: rgba(114, 114, 114, 0.5);
+}
+#blogMain .right input::placeholder {
+  text-transform: capitalize;
+  color: rgba(114, 114, 114, 0.5);
+}
+#blogMain .right input:focus {
+  border: 1px solid rgb(245, 245, 245);
+  outline: 1px solid rgb(245, 245, 245);
+}
+#blogMain .right .categoryTab {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding: 0.5rem 0;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+#blogMain .right .categoryTab .category {
+  display: flex;
+  justify-content: space-between;
+}
+#blogMain .right .categoryTab i {
+  cursor: pointer;
+}
+#blogMain .right .categoryList {
+  transition-duration: 0.3s;
+  padding: 18px 0px;
+  background-color: white;
+  width: 263px;
+  z-index: 10;
+  display: block;
+}
+#blogMain .right .categoryList li {
+  display: flex;
+  align-items: center;
+  border: 1px none none;
+  padding-left: 0px;
+  margin-bottom: 30px;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(72, 72, 72);
+}
+#blogMain .right .categoryList li span {
+  font-size: 12px;
+  color: rgb(186, 186, 186);
+  font-weight: 400;
+  margin-left: 10px;
+}
+#blogMain .right .categoryList li a {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+#blogMain .right .categoryList li i {
+  font-size: 7px;
+  padding-right: 15px;
+}
+#blogMain .right .categoryList li:hover {
+  color: rgb(242, 139, 0);
+}
+#blogMain .right .categoryList li:hover a {
+  color: rgb(242, 139, 0);
+}
+#blogMain .right .categoryList :last-child {
+  margin-bottom: 0;
+}
+#blogMain .right .tags {
+  margin-top: 1.5rem;
+}
+#blogMain .right .tags ul {
+  flex-wrap: wrap;
+}
+#blogMain .right .tags ul li {
+  width: 40%;
+  margin-bottom: 2rem;
+  background-color: rgb(245, 245, 245);
+  border: 1px solid rgb(245, 245, 245);
+  padding: 0.5rem;
+  padding: 0.3rem 1rem;
+  border-radius: 30px;
+  margin-right: 0.2rem;
+}
+#blogMain .right .tags ul li a {
+  width: 100%;
+  font-size: 12px;
+  color: rgb(140, 140, 140);
+  font-family: "Open Sans", sans-serif;
+}
+#blogMain .right .tags ul li:hover {
+  background-color: rgb(242, 139, 0);
+}
+#blogMain .right .tags ul li:hover a {
+  color: white;
+}
+
+#compareMain .compareMain {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+#compareMain .compareMain .title h3 {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+}
+#compareMain .compareMain .compare-content {
+  border: 2px solid rgb(229, 229, 229);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+#compareMain .compareMain .compare-content .product {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#compareMain .compareMain .compare-content .product .titlePart {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  padding: 8rem 0 10rem;
+}
+#compareMain .compareMain .compare-content .product .img {
+  text-align: center;
+}
+#compareMain .compareMain .compare-content .product .img img {
+  padding-top: 1rem;
+  width: 100%;
+}
+#compareMain .compareMain .compare-content .product .img .name {
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+  margin-top: 2rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+#compareMain .compareMain .compare-content .price {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#compareMain .compareMain .compare-content .price .titlePart {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  padding: 2.1rem 0;
+}
+#compareMain .compareMain .compare-content .price h3 {
+  color: rgb(242, 139, 0);
+  font-family: "Nunito", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  padding: 2rem 0;
+}
+#compareMain .compareMain .compare-content .addToCart {
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#compareMain .compareMain .compare-content .addToCart .titlePart {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  padding: 4rem 0;
+}
+#compareMain .compareMain .compare-content .addToCart button {
+  text-align: center;
+  margin-top: 3.5rem;
+  border: 1px none transparent;
+  background-color: rgb(249, 36, 0);
+  color: white;
+  border-radius: 30px;
+  padding: 0.5rem 0rem;
+  width: 80%;
+}
+#compareMain .compareMain .compare-content .addToCart button:hover {
+  background-color: rgb(242, 139, 0);
+}
+#compareMain .compareMain .compare-content .addToCart button img {
+  margin-left: 10px;
+}
+#compareMain .compareMain .compare-content .addToCart button span {
+  margin-left: 20px;
+}
+#compareMain .compareMain .compare-content .Description {
+  text-align: center;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+#compareMain .compareMain .compare-content .Description .titlePart {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  padding: 4rem 0;
+}
+#compareMain .compareMain .compare-content .Description span {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(145, 145, 145);
+  line-height: 26px;
+}
+#compareMain .compareMain .compare-content .last {
+  border-bottom: 1px none transparent;
+}
+
+#wishlistMain .leftCart {
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  color: rgb(45, 45, 45);
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+#wishlistMain .leftCart h3 {
+  margin-bottom: 40px;
+}
+#wishlistMain .leftCart .wishlist {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+#wishlistMain .leftCart .wishlist p {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(72, 72, 72);
+  border-bottom: 1px solid rgba(101, 101, 101, 0.5);
+  padding: 1rem 0;
+}
+#wishlistMain .leftCart .wishlist .img img {
+  width: 40%;
+}
+#wishlistMain .leftCart .wishlist .price {
+  color: #f28b00;
+  width: 100%;
+}
+#wishlistMain .leftCart .wishlist button {
+  background-color: rgb(249, 36, 0);
+  color: white;
+  border-radius: 30px;
+  border: 1px solid rgb(249, 36, 0);
+  font-size: 14px;
+  width: 50%;
+  padding: 0.5rem 0;
+}
+#wishlistMain .leftCart .wishlist a {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0.3rem 0;
+  background-color: rgb(101, 101, 101);
+  color: white;
+  border-radius: 30px;
+  border: 1px solid rgb(101, 101, 101);
+  width: 100%;
+}
+#wishlistMain .leftCart .wishlist a img {
+  margin: 0 20px;
+}
+#wishlistMain .leftCart .wishlist a:hover {
+  background-color: rgb(45, 45, 45);
+}
+#wishlistMain #servicesCart {
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+#wishlistMain #servicesCart .boox {
+  border: 1px solid rgb(229, 229, 229);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+  height: 100px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 10px;
+}
+#wishlistMain #servicesCart img {
+  margin-right: 20px;
+}
+#wishlistMain #servicesCart h3 {
+  width: 100%;
+  color: rgb(45, 45, 45);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+#wishlistMain #servicesCart p {
+  color: rgb(145, 145, 145);
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+#login {
+  background-color: rgb(250, 248, 248);
+}
+#login form {
+  margin: 6rem 0;
+  background-color: white;
+  padding: 4rem 2rem;
+  border-radius: 15px;
+}
+#login form input {
+  border-radius: 20px;
+}
+#login form button {
+  border-radius: 30px;
+  margin-top: 20px;
+  padding: 1rem 2rem;
+}
+#login form h1 {
+  margin-bottom: 6rem;
+}/*# sourceMappingURL=style.css.map */

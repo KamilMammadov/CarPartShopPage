@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Brand>
+@{
+    int count = (ViewBag.PageIndex - 1) * 5;
+}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Product Count</th>
+            <th>
+                Created at
+            </th>
+            <th>
+                Updated at
+            </th>
+            <th scope="col">Setting</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Brand brand in Model)
+        {
+            count++;
+            <tr>
+                <th class="align-middle" scope="row">@count</th>
+                <td class="align-middle">@brand.Name</td>
+                <td class="align-middle">@brand.Products.Count()</td>
+                <td>
+                    @brand.CreatedAt?.ToString("dd/mm/yyyy")
+                </td>
+                <td>
+                    @brand.UpdatedAt?.ToString("dd/mm/yyyy")
+                </td>
+                <td class="d-flex p-5">
+                    <a class="btn btn-warning" style="margin-right:10px" asp-action="Update" asp-route-page="@ViewBag.PageIndex" asp-route-id="@brand.Id">Update</a>
+                    <a class="btn  btn-danger" asp-route-page="@ViewBag.PageIndex" asp-action="delete" asp-route-id="@brand.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

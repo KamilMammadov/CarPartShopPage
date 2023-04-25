@@ -1,0 +1,170 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    int count = (ViewBag.PageIndex - 1) * 5;
+}
+<!-- main -->
+<main id="shopMain">
+    <!-- breadcrumb -->
+    <div class="breadcrumbGeneral">
+        <div class="container">
+           
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-xl-9 col-xxl-9 col-md-9 col-sm-12 col-12 LEFTonShop">
+                <!-- product section -->
+                <section id="BestSeller">
+                    <div class="container">
+                        <div class="productTab">
+                            <div id="dotsForBestSeller"><a href="">Best Seller</a></div>
+                        </div>
+                        <div class="productBoxes row justify-content-between">
+                            @await Component.InvokeAsync("BestSellerSingle")
+
+                        </div>
+                    </div>
+                </section>
+                <section id="SortProduct">
+                    <div class="container">
+                        <div class="productTab d-flex justify-content-between">
+                            <a href="">Products</a>
+                        </div>
+
+                        <div class="productBox">
+                            <div class="row justify-content-between">
+                                    @Html.Partial("_ProductOnShopPartialView")
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="PrevNext">
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            @if (ViewBag.PageIndex > 1)
+                            {
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="1" aria-label="Previous" style="color:grey">
+                                        @("<<")
+
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)" aria-label="Previous" style="color:grey">
+                                        <i class="fa-solid fa-arrow-left-long" style="color:grey"></i> Prev Page
+
+                                    </a>
+                                </li>
+                                @if (ViewBag.PageIndex == ViewBag.PageCount && ViewBag.PageIndex > 2)
+                                {
+                                    <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-2)">@(ViewBag.PageIndex-2)</a></li>
+                                }
+                                <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex-1)">@(ViewBag.PageIndex-1)</a></li>
+                            }
+
+                            <li style="color:grey" class="page-item active"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@ViewBag.PageIndex">@ViewBag.PageIndex</a></li>
+
+                            @if (ViewBag.PageIndex < ViewBag.PageCount)
+                            {
+                                <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex + 1)">@(ViewBag.PageIndex + 1)</a></li>
+                                @if (ViewBag.PageIndex == 1 && (ViewBag.PageIndex + 2) < ViewBag.PageCount)
+                                {
+                                    <li style="color:grey" class="page-item"><a style="color:grey" class="page-link" asp-action="index" asp-route-page="@(ViewBag.PageIndex+2)">@(ViewBag.PageIndex+2)</a></li>
+                                }
+                                <li style="color:grey" class="page-item">
+                                    <a style="color:grey" class="page-link" asp-route-page="@(ViewBag.PageIndex + 1)" aria-label="Next">
+                                        Next Page <i class="fa-solid fa-arrow-right-long"></i>
+
+                                    </a>
+                                </li>
+                                <li style="color:grey" class="page-item">
+                                    <a style="color:grey" class="page-link" asp-action="index" asp-route-page="@ViewBag.PageCount" aria-label="Next">
+                                        @(">>")
+
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </nav>
+                   
+                </section>
+            </div>
+            <div class="col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12 col-12 RIGHTonShop">
+                <div class="categoryTab">
+                    <div class="category"><a href="">Categories</a><i class="fa-solid fa-minus"></i></div>
+                </div>
+                <ul class="categoryList">
+                    @await Component.InvokeAsync("Category")
+
+                </ul>
+                <div class="price">
+                    <div class="priceTab">
+                        <div class="price"><a href="">Price</a><i id="iconForPrice" class="fa-solid fa-minus"></i></div>
+                    </div>
+                    <div class="rangeGeneral">
+                        <span>Price</span>
+                        <div class="range">
+                            <div class="range_container">
+                                <div class="sliders_control">
+                                    <input id="fromSlider" type="range" value="10" min="0" max="100" />
+                                    <input id="toSlider" type="range" value="40" min="0" max="100" />
+                                </div>
+                                <div class="form_control d-flex justify-content-center">
+                                    <input class="form_control_container__time__input" id="fromInput" value="10" min="0" max="100" />
+                                    <input class="form_control_container__time__input" id="toInput" value="40" min="0" max="100" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="brands">
+                    <div class="brandTab">
+                        <div class="brand"><a href="">Brands</a><i class="fa-solid fa-minus"></i></div>
+                    </div>
+                    <div class="brandSearch">
+                        <div class="search">
+                            <input type="text" placeholder="Brand Search">
+                        </div>
+                        <div class="context">
+
+                            @await Component.InvokeAsync("Brand")
+                        </div>
+                    </div>
+
+                </div>
+                <div class="colors">
+                    <div class="colorTab">
+                        <div class="color"><a href="">Colors</a><i class="fa-solid fa-minus"></i></div>
+                    </div>
+                    <div class="colorSearch">
+                        <div class="search">
+                            <input type="text" placeholder="Color Search">
+                        </div>
+                        <div class="context">
+
+                            @await Component.InvokeAsync("Color")
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bestseller">
+                    <div class="bestsellerTab">
+                        <div class="bestseller"><a href="">Best Seller</a><i class="fa-solid fa-minus"></i></div>
+                    </div>
+                    <div class="bestsellerPart">
+                        <div class="basket">
+                            @await Component.InvokeAsync("BestSellerOnSide")
+                        </div>
+                    </div>
+
+                </div>
+                <div class="banner">
+                    @await Component.InvokeAsync("ShopBanner")
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

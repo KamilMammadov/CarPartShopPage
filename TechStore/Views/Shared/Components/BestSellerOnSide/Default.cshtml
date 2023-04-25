@@ -1,0 +1,29 @@
+﻿@model IEnumerable<Product>
+
+@foreach (Product item in Model.Take(3))
+	{
+<div class="row align-items-center mb-3">
+    <div class="col-lg-4 col-xxl-4 col-xl-4 col-sm-4 col-md-4 col-4 imgForBasket">
+        <img src="~/assets/images/product/@item.MainImage" alt="product">
+    </div>
+    <div class="col-lg-7 col-xxl-7 col-xl-7 col-sm-7 col-md-7 col-7">
+        <div class="name">
+            <a asp-controller="shop" asp-action="detail" asp-route-id="@item.Id">@item.Name</a>
+        </div>
+        <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+        </div>
+        <div class="priceSection d-flex">
+            <div class="discount pe-5">
+                $@item.Price
+            </div>
+            <div class="sale">
+                <del>
+                    $@item.DiscountedPrice
+                </del>
+            </div>
+        </div>
+    </div>
+</div>
+		 
+	}

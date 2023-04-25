@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- main -->
+<main id="categoryMain">
+    <section id="mainSliderSection">
+        <div class="container">
+            <div class="mainSliderSection">
+                @await Component.InvokeAsync("CategorySlider")
+              
+               
+            </div>
+
+
+        </div>
+    </section>
+    <!-- our products-->
+    @await Component.InvokeAsync("TopCategory") 
+    @await Component.InvokeAsync("Highlight")
+</main>

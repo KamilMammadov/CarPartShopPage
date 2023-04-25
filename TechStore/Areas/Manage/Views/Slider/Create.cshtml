@@ -1,0 +1,51 @@
+﻿@model Slider
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="row">
+    <div class="col-lg-6 h3 mb-4 text-gray-800">
+        <h1>Slider Create</h1>
+    </div>
+    <div class="col-lg-12 mx-auto">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="Title"></label>
+                <input asp-for="Title" class="form-control" placeholder="Enter Slider Title">
+                <span class="text-danger" asp-validation-for="Title"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <input asp-for="Description" class="form-control" placeholder="Enter Slider Description">
+                <span class="text-danger" asp-validation-for="Description"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RegularPrice"></label>
+                <input asp-for="RegularPrice" class="form-control" placeholder="Enter Slider Regular Price">
+                <span class="text-danger" asp-validation-for="RegularPrice"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SalePrice"></label>
+                <input asp-for="SalePrice" class="form-control" placeholder="Enter Slider Sale Price">
+                <span class="text-danger" asp-validation-for="RegularPrice"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <textarea asp-for="Name" class="form-control" placeholder="Enter Slider Name"></textarea>
+                <span class="text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Link"></label>
+                <textarea asp-for="Link" class="form-control" placeholder="Enter Slider Link"></textarea>
+                <span class="text-danger" asp-validation-for="Link"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SliderFile">Image</label>
+                <input asp-for="SliderFile" class="form-control">
+                <span class="text-danger" asp-validation-for="SliderFile"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
